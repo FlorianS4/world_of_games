@@ -1,0 +1,30 @@
+[
+    {
+        "pk": 1,
+        "model": "products.gameproduct",
+        "fields": {
+            "sku": "pp0000000001",
+            "product_name": "1st Game",
+            "product_description": "TEST TETST ETST TETST ETSTE TEST TETS TETS",
+            "price": 25,
+            "category": 1,
+            "rating": 4,
+            "image_url": "",
+            "image": ""
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.gameproduct",
+        "fields": {
+            "sku": "pp0000000002",
+            "product_name": "2st Game",
+            "product_description": "TEST TETST ETST TETST ETSTE TEST TETS TETS",
+            "price": 30,
+            "category": 2,
+            "rating": 3,
+            "image_url": "",
+            "image": ""
+        }
+    }
+]
