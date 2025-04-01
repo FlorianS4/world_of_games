@@ -18,7 +18,105 @@
         "model": "products.gameproduct",
         "fields": {
             "sku": "pp0000000002",
-            "product_name": "2st Game",
+            "product_name": "2nd Game",
+            "product_description": "TEST TETST ETST TETST ETSTE TEST TETS TETS",
+            "price": 30,
+            "category": 2,
+            "rating": 3,
+            "image_url": "",
+            "image": ""
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.gameproduct",
+        "fields": {
+            "sku": "pp0000000003",
+            "product_name": "3th Game",
+            "product_description": "TEST TETST ETST TETST ETSTE TEST TETS TETS",
+            "price": 30,
+            "category": 1,
+            "rating": 3,
+            "image_url": "",
+            "image": ""
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.gameproduct",
+        "fields": {
+            "sku": "pp0000000004",
+            "product_name": "4th Game",
+            "product_description": "TEST TETST ETST TETST ETSTE TEST TETS TETS",
+            "price": 30,
+            "category": 2,
+            "rating": 3,
+            "image_url": "",
+            "image": ""
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.gameproduct",
+        "fields": {
+            "sku": "pp0000000005",
+            "product_name": "5th Game",
+            "product_description": "TEST TETST ETST TETST ETSTE TEST TETS TETS",
+            "price": 30,
+            "category": 2,
+            "rating": 3,
+            "image_url": "",
+            "image": ""
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.gameproduct",
+        "fields": {
+            "sku": "pp0000000006",
+            "product_name": "6th Game",
+            "product_description": "TEST TETST ETST TETST ETSTE TEST TETS TETS",
+            "price": 30,
+            "category": 2,
+            "rating": 3,
+            "image_url": "",
+            "image": ""
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.gameproduct",
+        "fields": {
+            "sku": "pp0000000007",
+            "product_name": "7th Game",
+            "product_description": "TEST TETST ETST TETST ETSTE TEST TETS TETS",
+            "price": 30,
+            "category": 2,
+            "rating": 3,
+            "image_url": "",
+            "image": ""
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.gameproduct",
+        "fields": {
+            "sku": "pp0000000008",
+            "product_name": "8th Game",
+            "product_description": "TEST TETST ETST TETST ETSTE TEST TETS TETS",
+            "price": 30,
+            "category": 2,
+            "rating": 3,
+            "image_url": "",
+            "image": ""
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.gameproduct",
+        "fields": {
+            "sku": "pp0000000009",
+            "product_name": "9th Game",
             "product_description": "TEST TETST ETST TETST ETSTE TEST TETS TETS",
             "price": 30,
             "category": 2,
