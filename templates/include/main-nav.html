@@ -16,14 +16,14 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link"
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="special-link"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Special offers
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item ">Sale</a>
-                <a href="" class="dropdown-item ">All special</a>
+            <div class="dropdown-menu border-0" aria-labelledby="special-link">
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=two_in_one" class="dropdown-item ">Two in one</a>
+                <a href="{% url 'products' %}?category=two_in_one, deals" class="dropdown-item ">all special offers</a>
 
             </div>
         </li>
@@ -44,3 +44,5 @@
                 FAQ
             </a>
         </li>
+    </ul>
+</div>
