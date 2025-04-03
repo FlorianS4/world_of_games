@@ -10,7 +10,7 @@ def all_products(request):
     """a view to show products, sorting and search queries"""
     products = GameProduct.objects.all()
     query = None
-    category = None
+    categories = None
 
     if request.GET:
         if 'category' in request.GET:
