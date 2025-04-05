@@ -46,7 +46,17 @@
                     <form class="form" action="{% url 'add_to_shoppingbag' product.id %}" method="POST">
                         {% csrf_token %}
                         <div class="form-row">
-                            <div class="col-12">
+                            {% with product.physical_or_digital as s %}
+                            {% if s %}
+                                <div class="col-12">
+                                    <p><strong>Do you want it digital or physical?:</strong></p>
+                                    <select class="form-control rounded-0 w-50" name="product_value" id='id_product_value'>
+                                        <option value="physical">physical</option>
+                                        <option value="digital" selected>digital</option>
+                                    </select>
+                                </div>
+                            {% endif %}
+                            <div class="col{% if s %}-12 mt-2{% endif %}">
                                 <p class="mt-3"><strong>Quantity:</strong></p>
                                 <div class="form-group w-50">
                                     <div class="input-group">
@@ -64,6 +74,7 @@
                                 <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to Shoppingbag">
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                            {% endwith %}
                         </div>
                     </form>
                 </div>
