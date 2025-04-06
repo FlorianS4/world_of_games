@@ -11,15 +11,28 @@ def shoppingbag_contents(request):
     product_count = 0
     shoppingbag = request.session.get('shoppingbag', {})
 
-    for item_id, quantity in shoppingbag.items():
-        product = get_object_or_404(GameProduct, pk=item_id)
-        total += quantity * product.price
-        product_count += quantity
-        shoppingbag_items.append({
-            'item_id': item_id,
-            'quantity': quantity,
-            'product': product,
-        })
+    for item_id, item_data in shoppingbag.items():
+        if isinstance(item_data, int):
+            product = get_object_or_404(GameProduct, pk=item_id)
+            total += item_data * product.price
+            product_count += item_data
+            shoppingbag_items.append({
+                'item_id': item_id,
+                'quantity': item_data,
+                'product': product,
+            })
+
+        else:
+            product = get_object_or_404(GameProduct, pk=item_id)
+            for game_type, quantity in item_data['items_by_game_type'].items():
+                total += quantity * product.price
+                product_count += quantity
+                shoppingbag_items.append({
+                    'item_id': item_id,
+                    'quantity': quantity,
+                    'product': product,
+                    'game_type': game_type,
+                })
 
     if total < settings.FREE_DELIVERY_THRESHOLD:
         delivery = total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)
