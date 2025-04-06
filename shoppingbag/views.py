@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import render, redirect, reverse, HttpResponse
 
 # Create your views here.
 
@@ -61,3 +61,25 @@ def adjust_shoppingbag(request, item_id):
 
     request.session['shoppingbag'] = shoppingbag
     return redirect(reverse('view_shoppingbag'))
+
+
+def remove_from_shoppingbag(request, item_id):
+    """ Remove the item from the shopping bag """
+    try:
+        game_type = None
+        if 'product_game_type' in request.POST:
+            game_type = request.POST['product_game_type']
+        shoppingbag = request.session.get('shoppingbag', {})
+
+        if game_type:
+            del shoppingbag[item_id]['items_by_game_type'][game_type]
+            if not shoppingbag[item_id]['items_by_game_type']:
+                shoppingbag.pop(item_id)
+        else:
+            shoppingbag.pop(item_id)
+
+        request.session['shoppingbag'] = shoppingbag
+        return HttpResponse(status=200)
+
+    except Exception as e:
+        return HttpResponse(status=500)
