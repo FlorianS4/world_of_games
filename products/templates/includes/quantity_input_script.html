@@ -1,0 +1,72 @@
+<script type="text/javascript">
+    /* 
+     * Disable +/- buttons outside 1-99 range.
+     * If no game_type is passed to the function, the parameter will have a value of undefined by default,
+     * which prevents any errors 
+     */
+     function handleEnableDisable(itemId, game_type) {
+        if (game_type) {
+            var currentValue = parseInt($(`.game_type_${itemId}_${game_type}`).val());
+        } else {
+            var currentValue = parseInt($(`.id_qty_${itemId}`).val());
+        }
+
+        var minusDisabled = currentValue < 2;
+        var plusDisabled = currentValue > 98;
+
+        if (game_type) {
+            $(`.decrement-size_${itemId}_${game_type}`).prop('disabled', minusDisabled);
+            $(`.increment-size_${itemId}_${game_type}`).prop('disabled', plusDisabled);
+        } else {
+            $(`.decrement-qty_${itemId}`).prop('disabled', minusDisabled);
+            $(`.increment-qty_${itemId}`).prop('disabled', plusDisabled);
+        }
+    }
+ 
+    // Ensure proper enabling/disabling of all inputs on page load
+    var allQtyInputs = $('.qty_input');
+    for(var i = 0; i < allQtyInputs.length; i++){
+        var itemId = $(allQtyInputs[i]).data('item_id');
+        var game_type = $(allQtyInputs[i]).data('game_type');
+        handleEnableDisable(itemId, game_type);
+    }
+ 
+    // Check enable/disable every time the input is changed
+    $('.qty_input').change(function() {
+        var itemId = $(this).data('item_id');
+        var game_type = $(this).data('game_type');
+        handleEnableDisable(itemId, game_type);
+    });
+ 
+    // Increment quantity
+    $('.increment-qty').click(function(e) {
+        e.preventDefault();
+        var itemId = $(this).data('item_id');
+        var game_type = $(this).data('game_type');
+        var closestInput = $(this).closest('.input-group').find('.qty_input')[0];
+        if (game_type) {
+           var allQuantityInputs = $(`.input-group-${itemId} input[data-game_type='${game_type}']`);
+        } else {
+           var allQuantityInputs = $(`.input-group-${itemId} input[name='quantity']`);
+        }
+        var currentValue = parseInt($(closestInput).val());
+        $(allQuantityInputs).val(currentValue + 1);
+        handleEnableDisable(itemId, game_type);
+    });
+ 
+    // Decrement quantity
+    $('.decrement-qty').click(function(e) {
+        e.preventDefault();
+        var itemId = $(this).data('item_id');
+        var game_type = $(this).data('game_type');
+        var closestInput = $(this).closest('.input-group').find('.qty_input')[0];
+        if (game_type) {
+           var allQuantityInputs = $(`.input-group-${itemId} input[data-game_type='${game_type}']`);
+        } else {
+           var allQuantityInputs = $(`.input-group-${itemId} input[name='quantity']`);
+        }
+        var currentValue = parseInt($(closestInput).val());
+        $(allQuantityInputs).val(currentValue - 1);
+        handleEnableDisable(itemId, game_type);
+    });
+</script>
