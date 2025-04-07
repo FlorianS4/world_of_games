@@ -135,9 +135,21 @@
 
         {% if messages %}
             <div class="message-container">
+                
                 {% for message in messages %}
-                    {% include 'include/toasts/toast_success.html' %}
+                    {% with message.level as level %}
+                        {% if level == 40 %}
+                            {% include 'include/toasts/toast_error.html' %}
+                        {% elif level == 30 %}
+                            {% include 'include/toasts/toast_warning.html' %}
+                        {% elif level == 25 %}
+                            {% include 'include/toasts/toast_success.html' %}
+                        {% else %}
+                            {% include 'include/toasts/toast_info.html' %}
+                        {% endif %}
+                    {% endwith %}
                 {% endfor %}
+
             </div>
         {% endif %}
 
