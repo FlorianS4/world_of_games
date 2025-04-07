@@ -1,4 +1,8 @@
 from django.shortcuts import render, redirect, reverse, HttpResponse
+from django.contrib import messages
+
+from products.models import GameProduct
+
 
 # Create your views here.
 
@@ -11,6 +15,8 @@ def view_shoppingbag(request):
 
 def add_to_shoppingbag(request, item_id):
     """ Add a quantity of the specified product to the shopping bag """
+
+    product = GameProduct.objects.get(pk=item_id)
 
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
@@ -25,8 +31,10 @@ def add_to_shoppingbag(request, item_id):
                 shoppingbag[item_id]['items_by_game_type'][game_type] += quantity
             else:
                 shoppingbag[item_id]['items_by_game_type'][game_type] = quantity
+                messages.success(request, f'Added game type {game_type.upper()} {product.product_name} to your bag')
         else:
             shoppingbag[item_id] = {'items_by_game_type': {game_type: quantity}}
+            messages.success(request, f'Added game type {game_type.upper()} {product.product_name} to your bag')
     else:
         if item_id in list(shoppingbag.keys()):
             shoppingbag[item_id] += quantity
