@@ -29,17 +29,20 @@ def add_to_shoppingbag(request, item_id):
         if item_id in list(shoppingbag.keys()):
             if game_type in shoppingbag[item_id]['items_by_game_type'].keys():
                 shoppingbag[item_id]['items_by_game_type'][game_type] += quantity
+                messages.success(request, f'Updated game type {game_type.upper()} {product.product_name} to {shoppingbag[item_id]["items_by_game_type"][game_type]}')
             else:
                 shoppingbag[item_id]['items_by_game_type'][game_type] = quantity
-                messages.success(request, f'Added game type {game_type.upper()} {product.product_name} to your bag')
+                messages.success(request, f'Added game type {game_type.upper()} {product.product_name} to your shoppingbag')
         else:
             shoppingbag[item_id] = {'items_by_game_type': {game_type: quantity}}
-            messages.success(request, f'Added game type {game_type.upper()} {product.product_name} to your bag')
+            messages.success(request, f'Added game type {game_type.upper()} {product.product_name} to your shoppingbag')
     else:
         if item_id in list(shoppingbag.keys()):
             shoppingbag[item_id] += quantity
+            messages.success(request, f'Updated {product.product_name} quantity to {shoppingbag[item_id]}')
         else:
             shoppingbag[item_id] = quantity
+            messages.success(request, f'Added {product.product_name} to your shoppingbag')
 
     request.session['shoppingbag'] = shoppingbag
     return redirect(redirect_url)
