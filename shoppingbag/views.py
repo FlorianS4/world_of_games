@@ -82,6 +82,9 @@ def adjust_shoppingbag(request, item_id):
 
 def remove_from_shoppingbag(request, item_id):
     """ Remove the item from the shopping bag """
+
+    product = get_object_or_404(GameProduct, pk=item_id)
+
     try:
         game_type = None
         if 'product_game_type' in request.POST:
@@ -92,11 +95,14 @@ def remove_from_shoppingbag(request, item_id):
             del shoppingbag[item_id]['items_by_game_type'][game_type]
             if not shoppingbag[item_id]['items_by_game_type']:
                 shoppingbag.pop(item_id)
+            messages.success(request, f'Removed game type {game_type.upper()} {product.product_name} from your shoppingbag')
         else:
             shoppingbag.pop(item_id)
+            messages.success(request, f'Removed {product.product_name} from your shoppingbag')
 
         request.session['shoppingbag'] = shoppingbag
         return HttpResponse(status=200)
 
     except Exception as e:
+        messages.error(request, f'Error removing item: {e}')
         return HttpResponse(status=500)
