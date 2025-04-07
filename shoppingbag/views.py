@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, reverse, HttpResponse
+from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404
 from django.contrib import messages
 
 from products.models import GameProduct
@@ -16,7 +16,7 @@ def view_shoppingbag(request):
 def add_to_shoppingbag(request, item_id):
     """ Add a quantity of the specified product to the shopping bag """
 
-    product = GameProduct.objects.get(pk=item_id)
+    product = get_object_or_404(GameProduct, pk=item_id)
 
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
@@ -51,6 +51,8 @@ def add_to_shoppingbag(request, item_id):
 def adjust_shoppingbag(request, item_id):
     """ Adjust the quantity of the specified product to the specified amount """
 
+    product = get_object_or_404(GameProduct, pk=item_id)
+
     quantity = int(request.POST.get('quantity'))
     game_type = None
     if 'product_game_type' in request.POST:
@@ -60,15 +62,19 @@ def adjust_shoppingbag(request, item_id):
     if game_type:
         if quantity > 0:
             shoppingbag[item_id]['items_by_game_type'][game_type] = quantity
+            messages.success(request, f'Updated game type {game_type.upper()} {product.product_name} quantity to {shoppingbag[item_id]["items_by_game_type"][game_type]}')
         else:
             del shoppingbag[item_id]['items_by_game_type'][game_type]
             if not shoppingbag[item_id]['items_by_game_type']:
                 shoppingbag.pop(item_id)
+                messages.success(request, f'Removed game type {game_type.upper()} {product.product_name} from your shoppingbag')
     else:
         if quantity > 0:
             shoppingbag[item_id] = quantity
+            messages.success(request, f'Updated {product.product_name} quantity to {shoppingbag[item_id]}')
         else:
             shoppingbag.pop(item_id)
+            messages.success(request, f'Removed {product.product_name} from your shoppingbag')
 
     request.session['shoppingbag'] = shoppingbag
     return redirect(reverse('view_shoppingbag'))
