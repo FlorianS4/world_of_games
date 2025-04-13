@@ -35,7 +35,7 @@ def checkout(request):
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 
     if request.method == 'POST':
-        bag = request.session.get('bag', {})
+        shoppingbag = request.session.get('shoppingbag', {})
 
         form_data = {
             'full_name': request.POST['full_name'],
@@ -51,7 +51,7 @@ def checkout(request):
         order_form = OrderForm(form_data)
         if order_form.is_valid():
             order = order_form.save()
-            for item_id, item_data in bag.items():
+            for item_id, item_data in shoppingbag.items():
                 try:
                     product = GameProduct.objects.get(id=item_id)
                     if isinstance(item_data, int):
@@ -62,12 +62,12 @@ def checkout(request):
                         )
                         order_line_item.save()
                     else:
-                        for game_type, quantity in item_data['physical_or_digital'].items():
+                        for game_type, quantity in item_data['items_by_game_type'].items():
                             order_line_item = OrderLineItem(
                                 order=order,
                                 product=product,
                                 quantity=quantity,
-                                product_game_type=game_type,
+                                physical_or_digital_type=game_type,
                             )
                             order_line_item.save()
                 except GameProduct.DoesNotExist:
@@ -84,8 +84,8 @@ def checkout(request):
             messages.error(request, 'There was an error with your form. \
                 Please double check your information.')
     else:
-        bag = request.session.get('shoppingbag', {})
-        if not bag:
+        shoppingbag = request.session.get('shoppingbag', {})
+        if not shoppingbag:
             messages.error(request, "There's nothing in your shoppingbag at the moment")
             return redirect(reverse('products'))
 
