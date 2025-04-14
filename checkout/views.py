@@ -53,7 +53,7 @@ def checkout(request):
             order = order_form.save(commit=False)
             pid = request.POST.get('client_secret').split('_secret')[0]
             order.stripe_pid = pid
-            order.original_bag = json.dumps(bag)
+            order.original_bag = json.dumps(shoppingbag)
             order.save()
             for item_id, item_data in shoppingbag.items():
                 try:
