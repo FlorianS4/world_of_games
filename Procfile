@@ -1,0 +1,1 @@
+web: gunicorn world_of_games.wsgi:application
