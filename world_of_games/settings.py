@@ -34,7 +34,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     '127.0.0.1',  # vs code preview
     'localhost',  # listen for stripe webhooks
-    'world-of-games-edc70ca11f8f.herokuapp.com/',  # heroku application
+    'world-of-games-edc70ca11f8f.herokuapp.com',  # heroku application
 ]
 
 
