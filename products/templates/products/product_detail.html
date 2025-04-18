@@ -53,7 +53,7 @@
                         {% csrf_token %}
                         <div class="form-row">
                             {% with product.physical_or_digital as s %}
-                            {% if s != none%}
+                            {% if s != none %}
                                 <div class="col-12">
                                     <p><strong>Do you want it digital or physical?:</strong></p>
                                     <select class="form-control rounded-0 w-50" name="product_game_type" id='id_product_game_type'>
