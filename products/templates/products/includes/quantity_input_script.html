@@ -15,8 +15,8 @@
         var plusDisabled = currentValue > 98;
 
         if (game_type) {
-            $(`.decrement-size_${itemId}_${game_type}`).prop('disabled', minusDisabled);
-            $(`.increment-size_${itemId}_${game_type}`).prop('disabled', plusDisabled);
+            $(`.decrement-game_type_${itemId}_${game_type}`).prop('disabled', minusDisabled);
+            $(`.increment-game_type_${itemId}_${game_type}`).prop('disabled', plusDisabled);
         } else {
             $(`.decrement-qty_${itemId}`).prop('disabled', minusDisabled);
             $(`.increment-qty_${itemId}`).prop('disabled', plusDisabled);
