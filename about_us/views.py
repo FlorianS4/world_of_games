@@ -3,8 +3,6 @@ from django.contrib import messages
 from .models import AboutUs
 from .forms import ContactUsForm
 
-# Create your views here.
-
 
 def about_us(request):
     """
