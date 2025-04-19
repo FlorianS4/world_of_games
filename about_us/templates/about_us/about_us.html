@@ -33,6 +33,18 @@
                 {{ about_description.description | safe }}
             </div>
         </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 my-5 pb-3 border border-warning rounded">
+                <p>Hello!<br>You want to get in contact with us?<br>Nothing is easier than that. Just fill out this form and we will reach out to you in the next 3 buisness days!</p>
+    
+                <!--world of games contact Form is underneath this-->
+                <form method="post">
+                    {{ contact_form | crispy }}
+                    {% csrf_token %}
+                    <button class="btn submit-btn-comment" type="submit" aria-label="submit button for contact form">Submit</button>
+                </form>
+            </div>
+        </div>
     </main>
 {% endblock %}
  

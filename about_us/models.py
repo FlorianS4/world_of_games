@@ -13,3 +13,17 @@ class AboutUs(models.Model):
 
     def __str__(self):
         return self.title
+    
+
+class ContactUs(models.Model):
+    """
+    Contact us model.
+    """
+
+    name = models.CharField(max_length=200)
+    email = models.EmailField()
+    contact_description = models.TextField(max_length=1000)
+    created_on = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return f"Contact {self.contact_description} from {self.name}"

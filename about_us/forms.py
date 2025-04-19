@@ -1,8 +1,13 @@
 from django import forms
-from .models import AboutUs
+from .models import AboutUs, ContactUs
 
 
-class AboutUsForm(forms.ModelForm):
 
-    class Meta:
-        model = AboutUs
+
+class ContactUsForm(forms.ModelForm):
+    """
+    Contact Us Form
+    """
+    class Meta: 
+        model = ContactUs
+        fields = ('name', 'email', 'contact_description')
