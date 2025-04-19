@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load static %}
+ 
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+ 
+{% block content %}
+    <div class="overlay"></div>
+    <main class="container">
+        <div class="row">
+            <div class="col text-center mt-3">
+                <h2 class="">About us</h2>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                {% if "placeholder" in about.profile_image.url %}
+                <img src="{{ MEDIA_URL }}noimage.png"  alt="placeholder image" class="profile-image">
+                {% else %}
+                <img src="{{ about.image.url }}" alt="{{ about.title }}" class="profile-image">
+                {% endif %}
+            </div>
+            <div class="col-8">
+                <!-- About us Title -->
+                <h2>{{ about.title }}</h2>
+                <!-- About us Content -->
+                {{ about.content | safe }}
+            </div>
+        </div>
+    </main>
+{% endblock %}
+ 
+{% block postloadjs %}
+{{ block.super }}
+ 
+{% endblock %}
