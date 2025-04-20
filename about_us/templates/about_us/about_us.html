@@ -19,13 +19,6 @@
             </div>
         </div>
         <div class="row">
-            <div class="col">
-                {% if "placeholder" in about_description.profile_image.url %}
-                <img src="{{ MEDIA_URL }}noimage.png"  alt="placeholder image" class="profile-image">
-                {% else %}
-                <img src="{{ about_description.image.url }}" alt="{{ about_description.title }}" class="profile-image">
-                {% endif %}
-            </div>
             <div class="col-8">
                 <!-- About us Title -->
                 <h2>{{ about_description.title }}</h2>

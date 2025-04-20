@@ -3,7 +3,7 @@
         "pk": 1,
         "model": "faq.faq",        
         "fields": {
-          "question": "Where do you deliver?",
+          "question": "Where do you deliver to?",
           "answer": "We currently deliver across Austria. - From Vienna to Bregenz!"
         }
       },
@@ -12,7 +12,71 @@
         "model": "faq.faq",
         "fields": {
           "question": "How long does delivery take?",
-          "answer": "Delivery usally takes 3-5 days from the time you place your order."
+          "answer": "Delivery usally takes 3-5 business days from the time you place your order."
+        }
+      },
+      {
+        "pk": 3,
+        "model": "faq.faq",
+        "fields": {
+          "question": "Whats the difference beetween pyhsical and digital?",
+          "answer": "With physical you get a disc with the game in a case for the game. With digital you are geeting a code to redeem."
+        }
+      },
+      {
+        "pk": 4,
+        "model": "faq.faq",
+        "fields": {
+          "question": "Could I pick up the games myself, if I live close by?",
+          "answer": "There is a pickup option on friday, beetween 11 AM and 2 PM from our office."
+        }
+      },
+      {
+        "pk": 5,
+        "model": "faq.faq",
+        "fields": {
+          "question": "What payment methods do you accept?",
+          "answer": "We currently only accept credit cards, but we are working on other options as well."
+        }
+      },
+      {
+        "pk": 6,
+        "model": "faq.faq",
+        "fields": {
+          "question": "Can I place a custom order for a special occasion?",
+          "answer": "Yeah, you definitly can, the best approach for this is to just write us an email so we can check and prepare it for you. Or fill in our get in contact form."
+        }
+      },
+      {
+        "pk": 7,
+        "model": "faq.faq",
+        "fields": {
+          "question": "Returns Policy - CHANGE OF MIND",
+          "answer": "Customers have 14 days from receiving their order to return the goods to us for a full refund of the cost of the item (excluding the delivery fee). Please notify WORLD OF GAMES shop by email using our Contact Us page. Provide us with the order #, the item and detail your intention to return the product. Customers can then opt to pay the shipping costs involved in returning the item(s) to our premises or alternatively they can drop the goods to our depot. Customers must return the goods fit for resale and in their original and undamaged packaging. Refunds can only be paid on the same credit card used to place the order."
+        }
+      },
+      {
+        "pk": 8,
+        "model": "faq.faq",
+        "fields": {
+          "question": "Returns Policy - CONDITIONS",
+          "answer": "WORLD OF GAMES shop reserves the right to inspect all returned goods. Your statutory rights are not affected."
+        }
+      },
+      {
+        "pk": 9,
+        "model": "faq.faq",
+        "fields": {
+          "question": "What is a privacy policy?",
+          "answer": "Privacy policies exist to protect customers from predatory data collection practices."
+        }
+      },
+      {
+        "pk": 10,
+        "model": "faq.faq",
+        "fields": {
+          "question": "Which data are you collecting from users in WORLD OF GAMES shop?",
+          "answer": "We collect user's name, email, address, phone number also cookie for sessions."
         }
       }
 ]
