@@ -29,5 +29,6 @@ urlpatterns = [
     path('profile/', include('profiles.urls')),
     path('about_us/', include('about_us.urls')),
     path('newsletter/', include('newsletter.urls')),
+    path('faq/', include('faq.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 handler404 = 'world_of_games.views.handler404'

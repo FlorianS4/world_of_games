@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+ 
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+ 
+{% block content %}
+    <div class="overlay"></div>
+    <main class="container">
+        <div class="row">
+            <div class="col text-center mt-3">
+                <h2 class="">FAQ</h2>
+                <hr>
+            </div>
+        </div>
+    </main>
+{% endblock %}
+ 
+{% block postloadjs %}
+{{ block.super }}
+ 
+{% endblock %}
