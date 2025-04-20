@@ -10,15 +10,43 @@
 {% endblock %}
  
 {% block content %}
-    <div class="overlay"></div>
-    <main class="container">
-        <div class="row">
-            <div class="col text-center mt-3">
-                <h2 class="">FAQ</h2>
-                <hr>
-            </div>
+<div class="container px-4 px-lg-5 py-5">
+
+    <!-- Header-->
+    <header class="row">
+        <div class="col-12 col-md-6 offset-md-3">
+            <h1 class="display-6 text-center" id="faq-title">Frequently Asked Questions</h1>
+            <hr aria-hidden="true">
         </div>
-    </main>
+    </header>
+
+    <!-- FAQ Section -->
+    <section class="row" aria-label="FAQ Section">
+        <div class="col-12 col-md-10 offset-md-1 mb-5">
+            {% if faqs %}
+                <div class="accordion" id="accordionExample">
+                    {% for faq in faqs %}
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse{{ faq.id }}" aria-expanded="false" aria-controls="collapseTwo">
+                    {{ faq.question }}
+                  </button>
+                </h2>
+              </div>
+              <div id="collapse{{ faq.id }}" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                    {{ faq.answer|safe }}
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+                </div>
+            {% else %}
+                <p class="text-center">No FAQs available at this time.</p>
+            {% endif %}
+        </div>
+    </section>
 {% endblock %}
  
 {% block postloadjs %}

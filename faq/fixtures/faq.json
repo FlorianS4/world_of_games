@@ -1,0 +1,18 @@
+[
+    {
+        "pk": 1,
+        "model": "faq.faq",        
+        "fields": {
+          "question": "Where do you deliver?",
+          "answer": "We currently deliver across Austria. - From Vienna to Bregenz!"
+        }
+      },
+      {
+        "pk": 2,
+        "model": "faq.faq",
+        "fields": {
+          "question": "How long does delivery take?",
+          "answer": "Delivery usally takes 3-5 days from the time you place your order."
+        }
+      }
+]
