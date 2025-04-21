@@ -55,12 +55,12 @@ body{
 .btn-black:active,
 .btn-black:focus {
     background: #fff !important;
-    color: #ea0000 !important;
+    color: #ffc107 !important;
     border-color: #000 !important;
     min-width: 260px !important;
 }
 .text-black {
-    color: #ea0000 !important;
+    color: #000 !important;
 }
 
 .border-black {
