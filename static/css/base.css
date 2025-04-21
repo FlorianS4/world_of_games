@@ -19,8 +19,6 @@ body{
 }
 .logo-font {
     text-transform: uppercase;
-    
-    
 }
 .main-logo-link {
     width: fit-content;
@@ -62,7 +60,7 @@ body{
     min-width: 260px !important;
 }
 .text-black {
-    color: #000 !important;
+    color: #ea0000 !important;
 }
 
 .border-black {
@@ -174,6 +172,19 @@ input[name='q']::placeholder {
     overflow-x: hidden;
     overflow-y: auto;
 }
+
+/* post link */
+
+.link-styling {
+    text-decoration: none;
+    color: #445261;
+}
+
+.link-styling:hover,
+.link-styling {
+    color: #445261;
+}
+
 
 /* -------------------------------- Media Queries */
 
