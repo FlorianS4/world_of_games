@@ -173,19 +173,6 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
-/* post link */
-
-.link-styling {
-    text-decoration: none;
-    color: #445261;
-}
-
-.link-styling:hover,
-.link-styling {
-    color: #445261;
-}
-
-
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
