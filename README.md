@@ -1,131 +1,471 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# World of Games post site
 
-Welcome test,
+You want to buy video games and are from Austrtia? Give our site a chance!
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![World of Games image]()
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
+Description
 
-## Gitpod Reminders
+Visit World of Games [here]()!!
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+## Content
+- [Site Owner Goals](#site-owner-goals)
+- [User Experience](#user-experience)
+    - [User Stories](#user-stories)
+        - [First Time User](#first-time-user)
+        - [Returning User](#returning-user)
+        - [Frequent User](#frequent-user)
+- [Design](#design)
+    - [Typography](#typography)
+    - [Imagery](#imagery)
+    - [Color Scheme](#color-scheme)
+- [Wireframes](#wireframes)
+- [Relationship Models](relationship-models)
+- [Agil Methology](#agil-methology)
+- [Features](#features)
+    - [Common Features](#common-features)
+      - [Navbar](#navbar)
+      - [Footer](#footer)
+    - [Main Page](#main-page)
+      - [](#)
+      - [](#)
+      - [](#)
+    - [](#)
+    - [](#)
+    - [](#)
+    - [](#)
+    - [](#)
+    - [](#)
+    - [Signup Page](#signup-page)
+    - [Login Page](#login-page)
+    - [Logout Page](#logout-page)
+    - [404 Page](#404-page)
+- [Testing](#testing)
+- [Technologies Used](#technologies-used)
+    - [Languages](#languages)
+    - [Programs Used - Frameworks - Libraries - Databases](#programs-used---frameworks---libraries---databases)
+- [Deployment](#deployment)
+    - [Heroku Deployment](#heroku-deployment)
+    - [Running the project locally](#running-the-project-locally)
+    - [Heroku set up](#heroku-set-up)
+- [Credits](#credits)
+    - [Code](#code)
+    - [Similar students projects](#similar-students-projects)
+    - [Resources Used](#resources-used)
+    - [Media](#media)
+- [Fixed Bugs](#fixed-bugs)
+- [Future Content](#future-content)
+- [Acknowledgments](#acknowledgments)
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
 
-A blue button should appear to click: _Make Public_,
+## Site Owner Goals
+- 
 
-Another blue button should appear to click: _Open Browser_.
+## User Experience
+### User Stories
+#### First Time User
+- 
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+#### Returning User
+- 
 
-To log into the Heroku toolbelt CLI:
+#### Frequent User
+- 
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## Design
+### Typography
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+[Google Fonts](https://fonts.google.com/) was used for the following font:
+- ![]()
 
-### Connecting your Mongo database
+    []()
+- 
 
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password _(will not echo **\*\*\*\*** on screen)_
+- ![]()
 
-------
+    []()
+- 
 
-## Release History
+- Sans Serif was chosen as a backup font, in case the main font is not imported into the website, or there is a problem with the browser.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### Imagery
 
-**June 18, 2024,** Add Mongo back into template
+All Images were taken from different websites. I give credit to them in the [credits](#credits) section.
 
-**June 14, 2024,** Temporarily remove Mongo until the key issue is resolved
+### Color Scheme
 
-**May 28 2024:** Fix Mongo and Links installs
+* 
 
-**April 26 2024:** Update node version to 16
+![]()
 
-**September 20 2023:** Update Python version to 3.9.17.
+## Wireframes
+<details>
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+<summary>Desktop Wireframe</summary>
+Main Page:
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+![Wireframe Main Page]()
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+ Page:
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+![]()
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+ Page:
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+![]()
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+Page:
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+![]()
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+Page:
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+![Login Page](/docs/wireframes-images/login-page-desktop.png)
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+Register Page:
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+![Register Page](/docs/wireframes-images/register-page-desktop.png)
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+404 Page:
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+![404 Page]()
 
-------
+</details>
 
-## FAQ about the uptime script
+<details>
 
-**Why have you added this script?**
+<summary>Mobile Wireframe</summary>
+Main Page:
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+![Wireframe Main Page mobile]()
 
-**How will this affect me?**
+Page:
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+![]()
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+Page:
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+![]()
 
-**So….?**
+Page:
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+![]()
 
-**Can I opt out?**
+Login Page:
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+![Login Page mobile](/docs/wireframes-images/login-page-mobile.png)
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+Register Page:
 
-**Anything more?**
+![Register Page mobile](/docs/wireframes-images/register-page-mobile.png)
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+404 Page:
 
----
+![404 Page mobile](/docs/wireframes-images/404-page-mobile.png)
 
-Happy coding!
+</details>
+
+## Relationship Models
+
+I used [LucidChart](https://www.lucidchart.com/) to create a relationship diagram of my models.
+
+![]()
+
+- This diagram shows the relationships in my models and beetween one another.
+- I used the [Django AllAuth](https://docs.allauth.org/en/latest/) library for user authentification, which created my user model for me.
+
+## Agil Methology
+
+This project was designed with the Agile methodology, using the Project Board and Issues sections in GitHub.
+
+>[]()
+
+## Features
+### Common Features
+
+#### Favicon
+
+![Favicon]()
+
+#### Navbar
+
+![Navbar desktop login view]()
+
+![Navbar desktop logged in view]()
+
+- The navbar gives the user menu options depending if they are already logged in or not.
+
+![Navbar mobile view]()
+
+- The navbar on mobile view has a drop down menu.
+
+#### Footer
+
+![Footer desktop view]()
+
+![Footer mobile view]()
+
+- The footer has a link to my GitHub as well as links to popular social media sites.
+
+### Main Page
+#### World of Games Banner
+ 
+![Banner desktop login view]()
+![Banner desktop logged in view]()
+
+- 
+
+![Banner mobile view]()
+
+#### 
+
+![]()
+
+![]()
+
+
+- 
+- 
+
+#### Pagination
+
+![Pagination]()
+
+### 
+
+![]()
+
+- 
+
+![]()
+
+- 
+
+![]()
+
+- 
+
+### 
+
+![]()
+
+- 
+
+### Page
+
+![]()
+
+- 
+
+### Page
+
+![]()
+
+- 
+
+###  Page
+
+![Page]()
+
+- 
+
+### Page
+
+![]()
+
+- 
+
+### Signup Page
+
+![Signup Page]()
+
+- A standard sign up page with validation.
+
+### Login Page
+
+![Login Page]()
+
+- A standard login page.
+
+### Logout Page
+
+![Logout Page]()
+
+- A standard logout page.
+
+### 404 Page
+![404 Page]()
+- When an error occurs or a wrong input is given to the url the 404-page will show up with the information on how to be redirected to the landing page.
+
+## Testing
+See the testing results in the [TESTING.md](TESTING.md) file.
+
+## Technologies Used
+### Languages
+HTML, CSS, JavaScript, Python
+
+### Programs Used - Frameworks - Libraries - Databases
+- [Google Fonts](https://fonts.google.com/) - to import  fonts used on website.
+- [FontAwesome](https://fontawesome.com/) - for footer's and navbar's icon.
+- [Google Chrome Dev Tools](https://developers.google.com/web/tools/chrome-devtools)- for troubleshooting, debugging, inspecting page's elements, testing responsiveness and styling elements.
+- [Gitpod](https://gitpod.io/) - IDE to develop the website.
+- [GitHub](https://GitHub.com/) - for version control and hosting.
+- [Balsamiq](https://balsamiq.com/wireframes/)- to create wireframes.
+- [Coolors](https://coolors.co/) - to create color palette.
+- [Wave](https://wave.webaim.org/) to test accessibility.
+- [Google Chrome's Lighthouse](https://developers.google.com/web/tools/lighthouse) - to test performance and accessibility.
+- [W3C Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/) to validate CSS code.
+- [W3C HTML Markup Validator](https://validator.w3.org/) to validate HTML code.
+- [JShint JavaScript Validator](https://jshint.com/) to validate JS code.
+- [PEP8 CI Python Linter](https://pep8ci.herokuapp.com/) to validate Python code.
+- [TinyPNG](https://tinypng.com/) - to compress images to reduce file size without a reduction in quality.
+- [LucidChart](https://www.lucidchart.com/) - was used to make the ERD Diagram.
+- [Django](https://www.djangoproject.com/) - used for the project's web framework. Is a Python framework.
+- [Bootstrap 5.3](https://getbootstrap.com/docs/5.3/getting-started/introduction//) - used as a CSS framework.
+- [Cloudinary](https://cloudinary.com/) - online static file storage used for uploaded pictures.
+- [PostgreSQL from Code Institute](https://dbs.ci-dbs.net/) - Postgres database.
+
+
+
+## Deployment
+
+How to setup your PostgreSQL database:
+- got to [CI Database Maker](https://dbs.ci-dbs.net/)
+- input your LMS email address
+- create your PostgreSQL database
+- press on Info and copy the Database URL to your env.py file.
+
+How to setup your Cloudinary database.
+- Go to [Cloudinary](https://cloudinary.com/) and sing up for free.
+- Go to your cloudinary dashboard and copy your API key.
+- Add the cloudinary API key to your env.py file. 
+
+This site was deployed to GitHub pages.
+Instructions:
+
+- Login to Github.
+- Go to the GitHub repository: FlorianS4/, navigate to the Settings tab.
+- Select the Pages tab on the menu on the left side.
+- Under Source, choose main from the Branch dropdown menu. Save it.
+- The page will refresh itself and the website is now deployed with a text indicating such.
+
+### Heroku Deployment
+
+- Log into your [Heroku](https://www.heroku.com/) account or create an account.
+- Select the New button on the right at the top and select "Create New App".
+- Enter a application name.
+- Select a region.
+- Click "Create App".
+- Go to the deploy option.
+- Select GitHub as your deployment option.
+- Confirm the connection to Github and choose the correct repository.
+- Select "Enable Automatic" and "Deploy branch" with the selection main.
+- Select "view" to see the live website.
+
+### Heroku set up
+
+- In your GitPod workspace create an env.py file and add it to .gitignore.
+- Add your SECRET_KEY value and the DATABASE_URL to the env.py file.
+- Add your CLOUDINARY_URL to the env.py file if you use cloudinary.
+- In the settings.py file import the env.py file and add the SECRET_KEY and DATABASE_URL file paths.
+- Add cloudinary to the INSTALLED_APPS and to the static files in the settings.py file.
+- Add TEMPLATES_DIR in settings.py file and change the templates directory to TEMPLATES_DIR.
+- Add these Config Vars in Heroku:
+    - `_URL` (Your Cloudinary API key)
+    - `DATABASE_URL` (Your Postgres SQL API key)
+    - `SECRET_KEY` (Your secret key)
+- Additional Heroku Files:
+    - Requirements.txt file
+    - Create Procfile via gunicorn
+
+        ```python
+        web: gunicorn codestar.wsgi
+        ```
+
+### Running the project locally
+Additional files needed for installation of dependencies:
+    Requirements.txt file
+
+How to Fork:
+- Login to Github
+- Go to the GitHub repository: 
+- Select the Fork button on the right at the top
+
+How to clone:
+- Login to Github
+- Go to the GitHub repository: 
+- Select the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
+- Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
+- Type 'git clone' into the terminal and then paste the link you copied in step 3. and enter.
+- A clone will be created.
+
+## Credits
+### Code
+
+This project was based on the Code Institute - .
+The walkthrough provided a base for. I customised a lot of the layouts and styling of this base with Bootsrap and custom CSS.
+
+For help with creating a
+
+- I used []() for help with creating a post.
+- I used []() for help with deleting a post.
+- I used []() for help with editing a post.
+- I used []() for help with storing and displaying likes correctly.
+
+- I used the way []() handled  []() as a reference and built .
+
+### Similar students projects
+
+When I browsed through the peer review slack channel I found [this project]() by []() and I re
+
+### Resources Used
+- Code Institute's lessons (I think therefore I Blog)
+- [Stack Overflow](https://stackoverflow.com/)
+- [W3Schools](https://www.w3schools.com/)
+### Media
+- []()
+- []() - This Image .
+- [Favicon]()
+
+## Fixed Bugs
+- 
+
+    * 
+
+- 
+
+    * 
+
+- 
+
+    * 
+
+- 
+
+    * 
+
+- 
+
+    * 
+
+- 
+
+    * 
+
+-  
+
+    * 
+
+## Future Content
+- 
+- 
+
+## Acknowledgments
+My mentor Jubril Akolade for his guidance, input and support.
+
+The Slack community on Code Institute for reviewing my project and for support.
+
+Code Institute for informational courses.
