@@ -64,9 +64,11 @@
                                     <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                                 </a>
                                 {% endif %}
-                            <div class="card-body pb-0">
+                                <a href="{% url 'product_detail' product.id %}" class="no-decoration">
+                                <div class="card-body pb-0">
                                 <p class="mb-0 text-warning card-title h4">{{ product.product_name }}</p>
                             </div>
+                        </a>
                             <div class="card-footer bg-white pt-0 border-warning text-left">
                                 <div class="row">
                                     <div class="col">

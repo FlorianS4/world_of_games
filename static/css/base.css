@@ -9,6 +9,26 @@ body{
     font-family: 'Lato';
     color:black
 }
+
+/* Landingpage Styling */
+.shadow-lg {
+    background-color: #000000a1;
+}
+
+/* Card Styling */
+
+.card:hover {
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.61);
+}
+
+.border-warning {
+    border-width: medium;
+}
+
+.no-decoration:hover {
+    text-decoration: none;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
