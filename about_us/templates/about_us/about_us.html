@@ -26,6 +26,9 @@
                 {{ about_description.description | safe }}
             </div>
         </div>
+        {% if request.user.is_superuser %}
+        <!-- show nothing -->
+        {% else %}
         <div class="row justify-content-center">
             <div class="col-12 col-md-6 my-5 pb-3 border border-warning rounded">
                 <p>Hello!<br>You want to get in contact with us?<br>Nothing is easier than that. Just fill out this form and we will reach out to you in the next 3 buisness days!</p>
@@ -38,6 +41,7 @@
                 </form>
             </div>
         </div>
+        {% endif %}
     </main>
 {% endblock %}
  
