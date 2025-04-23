@@ -12,21 +12,21 @@ body{
 
 /* Landingpage Styling */
 .shadow-lg {
-    background-color: #000000a1;
+    background-color: #000000a1 !important;
 }
 
 /* Card Styling */
 
 .card:hover {
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.61);
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.61) !important;
 }
 
 .border-warning {
-    border-width: medium;
+    border-width: medium !important;
 }
 
 .no-decoration:hover {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 /* from Bulma */
