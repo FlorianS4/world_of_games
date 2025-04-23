@@ -68,7 +68,7 @@ def edit_faq(request, faq_id):
 
 
 @login_required
-def delete_product(request, faq_id):
+def delete_faq(request, faq_id):
     """
     Delete a product from the store
     """
@@ -76,7 +76,7 @@ def delete_product(request, faq_id):
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
 
-    product = get_object_or_404(GameProduct, pk=faq_id)
-    product.delete()
-    messages.success(request, 'Product deleted!')
-    return redirect(reverse('products'))
+    faq = get_object_or_404(FAQ, pk=faq_id)
+    faq.delete()
+    messages.success(request, 'FAQ deleted!')
+    return redirect(reverse('faq'))
