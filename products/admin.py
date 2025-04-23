@@ -5,6 +5,9 @@ from .models import GameProduct, Category
 
 
 class GameProductAdmin(admin.ModelAdmin):
+    """
+    Admin model for managing products
+    """
     list_display = (
         'sku',
         'product_name',

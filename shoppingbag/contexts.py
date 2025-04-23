@@ -5,7 +5,9 @@ from products.models import GameProduct
 
 
 def shoppingbag_contents(request):
-
+    """
+    Context processor for shoppingbag contents
+    """
     shoppingbag_items = []
     total = 0
     product_count = 0

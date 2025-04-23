@@ -1,4 +1,5 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+from django.shortcuts import (
+    render, redirect, reverse, get_object_or_404, HttpResponse)
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
@@ -17,6 +18,9 @@ import json
 
 @require_POST
 def cache_checkout_data(request):
+    """
+    Cache checkout data for Stripe
+    """
     try:
         pid = request.POST.get('client_secret').split('_secret')[0]
         stripe.api_key = settings.STRIPE_SECRET_KEY
@@ -68,7 +72,10 @@ def checkout(request):
                         )
                         order_line_item.save()
                     else:
-                        for game_type, quantity in item_data['items_by_game_type'].items():
+                        for (
+                            game_type,
+                            quantity
+                             ) in item_data['items_by_game_type'].items():
                             order_line_item = OrderLineItem(
                                 order=order,
                                 product=product,
@@ -78,21 +85,24 @@ def checkout(request):
                             order_line_item.save()
                 except GameProduct.DoesNotExist:
                     messages.error(request, (
-                        "One of the products in your shoppingbag wasn't found in our database. "
+                        "One of the products in your shoppingbag" +
+                        " wasn't found in our database. "
                         "Please call us for assistance!")
                     )
                     order.delete()
                     return redirect(reverse('view_shoppingbag'))
 
             request.session['save_info'] = 'save-info' in request.POST
-            return redirect(reverse('checkout_success', args=[order.order_number]))
+            return redirect(reverse('checkout_success',
+                                    args=[order.order_number]))
         else:
             messages.error(request, 'There was an error with your form. \
                 Please double check your information.')
     else:
         shoppingbag = request.session.get('shoppingbag', {})
         if not shoppingbag:
-            messages.error(request, "There's nothing in your shoppingbag at the moment")
+            messages.error(request,
+                           "There's nothing in your shoppingbag at the moment")
             return redirect(reverse('products'))
 
         current_shoppingbag = shoppingbag_contents(request)

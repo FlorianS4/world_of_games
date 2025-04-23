@@ -6,6 +6,6 @@ class NewsletterForm(forms.ModelForm):
     """
     Newsletter Form
     """
-    class Meta: 
+    class Meta:
         model = Newsletter
         fields = ('email',)

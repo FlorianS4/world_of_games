@@ -13,10 +13,12 @@ def newsletter(request):
         if newsletter_form.is_valid():
             newsletter_form.save()
             messages.add_message(request, messages.SUCCESS,
-            "Great Work! You are now subscribed to our newsletter")
+                                 "Great Work! You are now " +
+                                 "subscribed to our newsletter")
         else:
             newsletter_form = NewsletterForm()
-            messages.warning(request, 'Your Subscription was not sent. Fill data in correctly. Please try again.')
+            messages.warning(request, 'Your Subscription was not sent. Fill ' +
+                             'data in correctly. Please try again.')
     newsletter_form = NewsletterForm()
 
     return render(
