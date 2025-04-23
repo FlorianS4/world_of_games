@@ -47,6 +47,19 @@
                 <p class="text-center">No FAQs available at this time.</p>
             {% endif %}
         </div>
+        {% if request.user.is_superuser %}
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 my-5 pb-3 border border-warning rounded">
+                <p> Add an FAQ Question and Answer to be displayed</p>
+                <!--world of games contact Form is underneath this-->
+                <form method="post">
+                    {{ faq_form | crispy }}
+                    {% csrf_token %}
+                    <button id="submit-button" class="btn btn-black rounded-0" type="submit" aria-label="submit button for contact form">Submit</button>
+                </form>
+            </div>
+        </div>
+        {% endif %}
     </section>
 {% endblock %}
  
