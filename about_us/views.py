@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, reverse, HttpResponseRedirect
 from django.contrib import messages
 from .models import AboutUs
 from .forms import ContactUsForm
@@ -16,6 +16,7 @@ def about_us(request):
             messages.add_message(
                 request, messages.SUCCESS, "Hey, thanks for your message."
                 + " I will check it out and contact you in the next 3 days.")
+            return HttpResponseRedirect(reverse('home'))
         else:
             contact_form = ContactUsForm()
             messages.warning(

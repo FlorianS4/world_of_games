@@ -1,4 +1,5 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.shortcuts import (
+    render, redirect, reverse, get_object_or_404, HttpResponseRedirect)
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .models import FAQ
@@ -18,6 +19,7 @@ def faq(request):
             faq_form.save()
             messages.add_message(
                 request, messages.SUCCESS, "Thanks for the FAQ")
+            return HttpResponseRedirect(reverse('home'))
         else:
             faq_form = FAQForm()
             messages.warning(

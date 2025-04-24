@@ -1,9 +1,10 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponseRedirect
+from django.shortcuts import (
+    render, redirect, reverse, get_object_or_404, HttpResponseRedirect)
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
-from .models import GameProduct, Category, Review
+from .models import GameProduct, Category
 from .forms import ProductForm, ReviewForm
 
 # Create your views here.
