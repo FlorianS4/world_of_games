@@ -103,6 +103,27 @@
                         </div>
                     </form>
                 </div>
+                {% if user.is_authenticated %}
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-6 my-5 pb-3 border border-warning rounded">
+                        <p>Hello!<br>You played this game?<br>Leave your review!</p>
+            
+                        <!--world of games review Form is underneath this-->
+                        <form method="post">
+                            {{ review_form | crispy }}
+                            {% csrf_token %}
+                            <button id="submit-button" class="btn btn-black rounded-0" type="submit" aria-label="submit button for contact form">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                {% else %}
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-6 my-5 pb-3 border border-warning rounded">
+                        <p>Hello!<br>You want to leave a review?<br>Get signed up or login!</p>
+                    </div>
+                </div>
+                {% endif %}
+                
             </div>
         </div>
     </div>

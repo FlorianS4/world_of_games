@@ -3,8 +3,8 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
-from .models import GameProduct, Category
-from .forms import ProductForm
+from .models import GameProduct, Category, Review
+from .forms import ProductForm, ReviewForm
 
 # Create your views here.
 
@@ -70,8 +70,30 @@ def product_detail(request, product_id):
     """
     product = get_object_or_404(GameProduct, pk=product_id)
 
+    if request.method == "POST":
+        review_form = ReviewForm(data=request.POST)
+        if review_form.is_valid():
+            review = review_form.save(commit=False)
+            review.reviewer = request.user
+            review.product = product
+            review.save()
+            messages.add_message(
+                request, messages.SUCCESS, "Thanks for the review")
+        else:
+            review_form = ReviewForm()
+            messages.warning(
+                request,
+                'Your review was not sent. Fill data in correctly. '
+                + 'Please try again.')
+    review_form = ReviewForm()
+
+    context = {
+        'review_form': review_form
+        }
+
     context = {
         'product': product,
+        'review_form': review_form
     }
 
     return render(request, 'products/product_detail.html', context)
@@ -153,3 +175,29 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+
+#@login_required
+#def add_review(request):
+#    """
+#    Add Review to product
+#    """
+#    if request.method == "POST":
+#        review_form = ReviewForm(data=request.POST)
+#        if review_form.is_valid():
+#            review_form.save()
+#            messages.add_message(
+#                request, messages.SUCCESS, "Thanks for the review")
+#        else:
+#            review_form = ReviewForm()
+#            messages.warning(
+#                request,
+#                'Your review was not sent. Fill data in correctly. '
+#                + 'Please try again.')
+#    review_form = ReviewForm()
+#
+#    context = {
+#        'review_form': review_form
+#        }
+#
+#    return render(request, 'products/product_detail.html', context)
