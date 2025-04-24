@@ -110,20 +110,20 @@
         <div class="col-12 col-md-10 offset-md-1 mb-5 pb-5">
             <div class="border border-warning rounded">
                 <h4 class="text-center p-2">Hello!<br>You bought this game and played it?<br>Leave your review!</h4>
-                <!--world of games contact Form is underneath this-->
-                <form class="p-2" method="post">
+                <!--world of games review Form is underneath this-->
+                <form class="p-2" method="post" id="reviewForm">
                     {{ review_form | crispy }}
                     {% csrf_token %}
                     <div class="text-center">
-                        <button id="submit-button" class="btn btn-black rounded-0" type="submit" aria-label="submit button for contact form">Submit</button>
+                        <button id="submitButton" class="btn btn-black rounded-0" type="submit" aria-label="submit button for review form">Submit</button>
                     </div>                        
                 </form>
             </div>
         </div>
         {% else %}
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-6 my-5 pb-3 border border-warning rounded">
-                <p>Hello!<br>You want to leave a review?<br>Get signed up or login!</p>
+        <div class="col-12 col-md-10 offset-md-1 mb-5 pb-5">
+            <div class="border border-warning rounded text-center w-50 m-auto">
+                <p>Hello!<br>You want to leave a review?<br>Get <a href="{% url 'account_signup' %}">signed up</a> or <a href="{% url 'account_login' %}">login</a>!</p>
             </div>
         </div>
         {% endif %}
@@ -139,28 +139,48 @@
                                 {{ review.created_on }}
                             </span> wrote:
                         </p>
-                        {% if product.rating %}
-                        <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ review.rating }} / 5</small>
-                        {% else %}
-                        <small class="text-muted">No Rating</small>
-                        {% endif %}
                         <div class="comment-body" id="review{{ review.id }}">
                             {{ review.review_description | linebreaks }}
                         </div>
-                        <!-- Delete and Edit button for comment author -->
-                        {% if user.is_authenticated and comment.username == request.user %}
-                        <button class="btn btn-edit btn-outline-primary" comment_id="{{ comment.id }}" aria-label="edit button for comments if user is the author">Edit</button>
-                        <button class="btn btn-delete btn-outline-danger" comment_id="{{ comment.id }}" aria-label="delete button for comments if user is the author">Delete</button>                    
+                        <!-- Delete and Edit button for review author -->
+                        {% if review.reviewer == request.user %}
+                        <button class="btn btn-edit btn-outline-primary" data-review_id="{{ review.id }}" data-review-product-id="{{ review.product.id }}" aria-label="edit button for reviews if user is the author">Edit</button>
+                        <button class="btn btn-delete btn-outline-danger" data-review_id="{{ review.id }}" data-review-product-id="{{ review.product.id }}" aria-label="delete button for reviews if user is the author">Delete</button>                    
                         {% endif %}
                         <hr>
                     </div>
                     {% endfor %}
                 </div>
             </div>
+            <!-- Delete confirmation modal -->
+            <div class="modal fade" id="deleteModal" tabindex="-1"
+            aria-labelledby="deleteModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title"
+                    id="deleteModalLabel">Delete review?</h5>
+                <button type="button" class="btn-close"
+                    data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                Are you sure you want to delete your review?
+                This action cannot be undone.
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary"
+                    data-bs-dismiss="modal">Close</button>
+                <a id="deleteConfirm" href="#" class="btn
+                    btn-danger">Delete</a>
+                </div>
+            </div>
+            </div>
+            </div>
     </section>
 {% endblock %}
 
 {% block postloadjs %}
 {{ block.super }}
+<script src="{% static 'js/reviews.js' %}"></script>
 {% include 'products/includes/quantity_input_script.html' %}
 {% endblock %}

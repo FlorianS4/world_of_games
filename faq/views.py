@@ -39,7 +39,7 @@ def faq(request):
 @login_required
 def edit_faq(request, faq_id):
     """
-    Edit a product in the store
+    Edit a faq in the store
     """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
@@ -72,7 +72,7 @@ def edit_faq(request, faq_id):
 @login_required
 def delete_faq(request, faq_id):
     """
-    Delete a product from the store
+    Delete a faq from the store
     """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')

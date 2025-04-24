@@ -16,6 +16,8 @@ class GameProductAdmin(admin.ModelAdmin):
         'image',
     )
 
+    prepopulated_fields = {'slug': ('product_name',)}
+
     ordering = ('sku',)
 
 

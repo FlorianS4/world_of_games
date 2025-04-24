@@ -32,6 +32,7 @@ class GameProduct(models.Model):
                                  on_delete=models.SET_NULL)
     sku = models.CharField(max_length=254, null=True, blank=True)
     product_name = models.CharField(max_length=254)
+    slug = models.SlugField(max_length=200, default="", null=False)
     product_description = models.TextField()
     physical_or_digital = models.BooleanField(default=False,
                                               null=True,
@@ -62,10 +63,6 @@ class Review(models.Model):
                                  on_delete=models.CASCADE,
                                  related_name='reviewer',
                                  null=False)
-    rating = models.DecimalField(max_digits=6,
-                                 decimal_places=2,
-                                 null=True,
-                                 blank=True)
     review_description = models.TextField()
     created_on = models.DateTimeField(auto_now=True)
 
