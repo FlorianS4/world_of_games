@@ -103,30 +103,61 @@
                         </div>
                     </form>
                 </div>
-                {% if user.is_authenticated %}
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-6 my-5 pb-3 border border-warning rounded">
-                        <p>Hello!<br>You played this game?<br>Leave your review!</p>
-            
-                        <!--world of games review Form is underneath this-->
-                        <form method="post">
-                            {{ review_form | crispy }}
-                            {% csrf_token %}
-                            <button id="submit-button" class="btn btn-black rounded-0" type="submit" aria-label="submit button for contact form">Submit</button>
-                        </form>
-                    </div>
-                </div>
-                {% else %}
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-6 my-5 pb-3 border border-warning rounded">
-                        <p>Hello!<br>You want to leave a review?<br>Get signed up or login!</p>
-                    </div>
-                </div>
-                {% endif %}
-                
-            </div>
         </div>
     </div>
+    <section class="row">
+        {% if user.is_authenticated %}
+        <div class="col-12 col-md-10 offset-md-1 mb-5 pb-5">
+            <div class="border border-warning rounded">
+                <h4 class="text-center p-2">Hello!<br>You bought this game and played it?<br>Leave your review!</h4>
+                <!--world of games contact Form is underneath this-->
+                <form class="p-2" method="post">
+                    {{ review_form | crispy }}
+                    {% csrf_token %}
+                    <div class="text-center">
+                        <button id="submit-button" class="btn btn-black rounded-0" type="submit" aria-label="submit button for contact form">Submit</button>
+                    </div>                        
+                </form>
+            </div>
+        </div>
+        {% else %}
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 my-5 pb-3 border border-warning rounded">
+                <p>Hello!<br>You want to leave a review?<br>Get signed up or login!</p>
+            </div>
+        </div>
+        {% endif %}
+         <!-- Displaying Review -->
+            <div class="col-12 col-md-10 offset-md-1 mb-5 pb-5">
+                <h3>Reviews:</h3>
+                <div class="comment-text">
+                    {% for review in reviews %}
+                    <div class="p-2 comments">
+                        <p>
+                            {{ review.reviewer }}
+                            <span>
+                                {{ review.created_on }}
+                            </span> wrote:
+                        </p>
+                        {% if product.rating %}
+                        <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ review.rating }} / 5</small>
+                        {% else %}
+                        <small class="text-muted">No Rating</small>
+                        {% endif %}
+                        <div class="comment-body" id="review{{ review.id }}">
+                            {{ review.review_description | linebreaks }}
+                        </div>
+                        <!-- Delete and Edit button for comment author -->
+                        {% if user.is_authenticated and comment.username == request.user %}
+                        <button class="btn btn-edit btn-outline-primary" comment_id="{{ comment.id }}" aria-label="edit button for comments if user is the author">Edit</button>
+                        <button class="btn btn-delete btn-outline-danger" comment_id="{{ comment.id }}" aria-label="delete button for comments if user is the author">Delete</button>                    
+                        {% endif %}
+                        <hr>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+    </section>
 {% endblock %}
 
 {% block postloadjs %}

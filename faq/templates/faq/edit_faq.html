@@ -11,28 +11,32 @@
 
 {% block content %}
     <div class="overlay"></div>
-    <div class="container mb-5 pb-5">
+    <section></section>
+    <div class="container px-4 px-lg-5 py-5">
         <div class="row">
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 offset-md-3">
+                <h2 class="logo-font display-6 text-center">Edit FAQ</h2>
                 <hr>
-                <h2 class="logo-font mb-4">Edit FAQ</h2>
             </div>
         </div>
-
-        <div class="row">
-            <div class="col-12 col-md-6 mb-5 pb-5">
-                <form method="POST" action="{% url 'edit_faq' faq.id %}" class="form mb-2" enctype="multipart/form-data">
-                    {% csrf_token %}
-                    {% for field in form %}
-                        {{ field }}
-                    {% endfor %}
-                    <div class="text-right">
-                        <a class="btn btn-outline-black rounded-0" href="{% url 'faq' %}">Cancel</a>
-                        <button class="btn btn-black rounded-0" type="submit">Update FAQ</button>
+    <section class="row">
+        <div class="col-12 col-md-10 offset-md-1 mb-5 pb-5">
+            <div class="border border-warning rounded">
+                <form method="POST" action="{% url 'edit_faq' faq.id %}" class="form" enctype="multipart/form-data">
+                    <div class="d-flex flex-column m-2">
+                        {% csrf_token %}
+                        {% for field in form %}
+                            {{ field }}
+                        {% endfor %}
                     </div>
+                <div class="text-center p-2">
+                    <a class="btn btn-outline-black rounded-0" href="{% url 'faq' %}">Cancel</a>
+                    <button class="btn btn-black rounded-0" type="submit">Update FAQ</button>
+                </div>
                 </form>
             </div>            
         </div>
+    </section>
     </div>
 {% endblock %}
  

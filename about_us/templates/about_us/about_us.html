@@ -37,7 +37,9 @@
                 <form method="post">
                     {{ contact_form | crispy }}
                     {% csrf_token %}
-                    <button id="submit-button" class="btn btn-black rounded-0" type="submit" aria-label="submit button for contact form">Submit</button>
+                    <div class="text-center">
+                        <button id="submit-button" class="btn btn-black rounded-0" type="submit" aria-label="submit button for contact form">Submit</button>
+                    </div>                    
                 </form>
             </div>
         </div>

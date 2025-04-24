@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponseRedirect
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
@@ -69,6 +69,7 @@ def product_detail(request, product_id):
     view to show a single product
     """
     product = get_object_or_404(GameProduct, pk=product_id)
+    reviews = product.reviews.all().order_by("-created_on")
 
     if request.method == "POST":
         review_form = ReviewForm(data=request.POST)
@@ -79,21 +80,20 @@ def product_detail(request, product_id):
             review.save()
             messages.add_message(
                 request, messages.SUCCESS, "Thanks for the review")
+            return HttpResponseRedirect(reverse('products'))
         else:
             review_form = ReviewForm()
             messages.warning(
                 request,
                 'Your review was not sent. Fill data in correctly. '
                 + 'Please try again.')
+
     review_form = ReviewForm()
 
     context = {
-        'review_form': review_form
-        }
-
-    context = {
         'product': product,
-        'review_form': review_form
+        'review_form': review_form,
+        'reviews': reviews
     }
 
     return render(request, 'products/product_detail.html', context)

@@ -53,20 +53,24 @@
                 <p class="text-center">No FAQs available at this time.</p>
             {% endif %}
         </div>
-        {% if request.user.is_superuser %}
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-6 my-5 pb-3 border border-warning rounded">
-                <p> Add an FAQ Question and Answer to be displayed</p>
-                <!--world of games contact Form is underneath this-->
-                <form method="post">
-                    {{ faq_form | crispy }}
-                    {% csrf_token %}
-                    <button id="submit-button" class="btn btn-black rounded-0" type="submit" aria-label="submit button for contact form">Submit</button>
-                </form>
-            </div>
-        </div>
-        {% endif %}
     </section>
+        <section class="row">
+            {% if request.user.is_superuser %}
+            <div class="col-12 col-md-10 offset-md-1 mb-5 pb-5">
+                <div class="border border-warning rounded">
+                    <h4 class="text-center p-2"> Add an FAQ Question and Answer to be displayed</h4>
+                    <!--world of games contact Form is underneath this-->
+                    <form class="p-2" method="post">
+                        {{ faq_form | crispy }}
+                        {% csrf_token %}
+                        <div class="text-center">
+                            <button id="submit-button" class="btn btn-black rounded-0" type="submit" aria-label="submit button for contact form">Submit</button>
+                        </div>                        
+                    </form>
+                </div>
+            </div>
+            {% endif %}
+        </section>
 {% endblock %}
  
 {% block postloadjs %}
