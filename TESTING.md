@@ -23,66 +23,102 @@ Visit the deployed site: [World of Games]()
 ### Validator Testing
 #### HTML
 
-No errors were shown for the index.HTML document on the [W3C Markup Validation]() Service.
+No errors were shown for the index.HTML document on the [W3C Markup Validation](https://validator.w3.org/) Service.
 
 <details>
 <summary>Home Page</summary>
 
-![Home Page HTML validator]()
+![Home Page HTML validator](/docs/testing-images/html-testing/index-page-html-testing.png)
 </details>
 
 <details>
-<summary>Page</summary>
+<summary>Products Page</summary>
 
-![Page]()
+![Products Page HTML validator](/docs/testing-images/html-testing/products-page-html-testing.png)
 </details>
 
 <details>
-<summary>Page</summary>
+<summary>Product Detail Page</summary>
 
-![Post]()
+![Product Detail Page HTML validator](/docs/testing-images/html-testing/product-detail-page-html-testing.png)
 </details>
 
 <details>
-<summary>Page</summary>
+<summary>Product Add Page</summary>
 
-![Page HTML validator]()
+![Product Add Page HTML validator](/docs/testing-images/html-testing/product-add-page-html-testing.png)
 </details>
 
 <details>
-<summary>Page</summary>
+<summary>Product Edit Page</summary>
 
-![Page HTML validator]()
+![Product Edit Page HTML validator](/docs/testing-images/html-testing/product-edit-page-html-testing.png)
 </details>
 
 <details>
-<summary>Page</summary>
+<summary>Shoppingbag Page</summary>
 
-![Page HTML validator]()
+![Shoppingbag Page HTML validator](/docs/testing-images/html-testing/shoppingbag-page-html-testing.png)
 </details>
 
 <details>
-<summary>Page</summary>
+<summary>Checkout Page</summary>
 
-![Page HTML validator]()
+![Checkout Page HTML validator](/docs/testing-images/html-testing/checkout-page-html-testing.png)
 </details>
 
 <details>
-<summary>Page</summary>
+<summary>Checkout Sucess Page</summary>
 
-![Page HTML validator]()
+![Checkout Sucess Page HTML validator](/docs/testing-images/html-testing/checkout-sucess-page-html-testing.png)
 </details>
 
 <details>
-<summary>Page</summary>
+<summary>Profile Page</summary>
 
-![Page HTML validator]()
+![Profile Page HTML validator](/docs/testing-images/html-testing/profile-page-html-testing.png)
 </details>
 
 <details>
-<summary>Page</summary>
+<summary>About us and Contact us Page</summary>
 
-![Page HTML validator]()
+![About us and Contact us Page HTML validator](/docs/testing-images/html-testing/about-us-page-html-testing.png)
+</details>
+
+<details>
+<summary>FAQ Page</summary>
+
+![FAQ Page HTML validator](/docs/testing-images/html-testing/faq-page-html-testing.png)
+</details>
+
+<details>
+<summary>FAQ edit Page</summary>
+
+![FAQ edit Page HTML validator](/docs/testing-images/html-testing/faq-edit-page-html-testing.png)
+</details>
+
+<details>
+<summary>Login Page</summary>
+
+![Login Page HTML validator](/docs/testing-images/html-testing/login-page-html-testing.png)
+</details>
+
+<details>
+<summary>Sign Up Page</summary>
+
+![Sign Up Page HTML validator](/docs/testing-images/html-testing/sign-up-page-html-testing.png)
+</details>
+
+<details>
+<summary>Sign out Page</summary>
+
+![Sign out Page HTML validator](/docs/testing-images/html-testing/sign-out-page-html-testing.png)
+</details>
+
+<details>
+<summary>404 Page</summary>
+
+![404 Page HTML validator](/docs/testing-images/html-testing/404-page-html-testing.png)
 </details>
 
 #### CSS
