@@ -123,12 +123,30 @@ No errors were shown for the index.HTML document on the [W3C Markup Validation](
 
 #### CSS
 
-No errors were shown for the CSS stylesheet from the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+No errors were shown for the CSS stylesheets from the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 
 <details>
-<summary>CSS validation</summary>
+<summary>base.css validation</summary>
 
-![CSS validation]()
+![base.css validation](/docs/testing-images/css-testing/base.css-testing.png)
+</details>
+
+<details>
+<summary>checkout.css validation</summary>
+
+![checkout.css validation](/docs/testing-images/css-testing/checkout.css-testing.png)
+</details>
+
+<details>
+<summary>profile.css validation</summary>
+
+![profile.css validation](/docs/testing-images/css-testing/profile.css-testing.png)
+</details>
+
+<details>
+<summary>CSS validation for website url</summary>
+
+![CSS validation for website url](/docs/testing-images/css-testing/css-testing-for-the-whole-website.png)
 </details>
 
 #### JavaScript
@@ -136,9 +154,33 @@ No errors were shown for the CSS stylesheet from the [W3C CSS Validator](https:/
 [JSHint](https://jshint.com/) was used to validate the JavaScript.
 
 <details>
-<summary>.js</summary>
+<summary>quantity_input_script.js</summary>
 
-![.js validation]()
+![quantity_input_script.js validation](/docs/testing-images/js-testing/quantity_input_script-js-testing.png)
+</details>
+
+<details>
+<summary>stripe_element.js</summary>
+
+![stripe_element.js validation](/docs/testing-images/js-testing/stripe_element.js-testing.png)
+</details>
+
+<details>
+<summary>reviews.js</summary>
+
+![reviews.js validation](/docs/testing-images/js-testing/reviews.js-testing.png)
+</details>
+
+<details>
+<summary>shoppingbag-update-and-remove.js</summary>
+
+![shoppingbag-update-and-remove.js validation](/docs/testing-images/js-testing/shoppingbag-update-and-reomve-products.js.png)
+</details>
+
+<details>
+<summary>product-sorting.js</summary>
+
+![product-sorting.js validation](/docs/testing-images/js-testing/product-sorting-js-testing.png)
 </details>
 
 #### PEP8
@@ -150,89 +192,269 @@ No errors were shown for all the python files from the [PEP8 CI Python Linter](h
 <details>
 <summary>World of Games settings.py</summary>
 
-![World of Games settings.py testing]()
+![World of Games settings.py testing](/docs/testing-images/python-testing/world_of_games-settings.py-testing.png)
 </details>
 
 <details>
 <summary>World of Games urls.py</summary>
 
-![World of Games urls.py testing]()
-</details>
-
--  App
-
-<details>
-<summary> admin.py</summary>
-
-![admin.py testing]()
+![World of Games urls.py testing](/docs/testing-images/python-testing/world_of_games-urls.py-testing.png)
 </details>
 
 <details>
-<summary>apps.py</summary>
+<summary>World of Games views.py</summary>
 
-![apps.py testing]()
+![World of Games views.py testing](/docs/testing-images/python-testing/world_of_games-views.py-testing.png)
+</details>
+
+
+- Home App
+
+<details>
+<summary>Home urls.py</summary>
+
+![Home urls.py testing](/docs/testing-images/python-testing/world_of_games_home-urls.py-testing.png)
 </details>
 
 <details>
-<summary>forms.py</summary>
+<summary>Home views.py</summary>
 
-![forms.py testing]()
+![Home views.py testing](/docs/testing-images/python-testing/world_of_games_home-views.py-testing.png)
+</details>
+
+
+- Products App
+
+<details>
+<summary>Products admin.py</summary>
+
+![Products admin.py testing](/docs/testing-images/python-testing/world_of_games_products-admin.py-testing.png)
 </details>
 
 <details>
-<summary>models.py</summary>
+<summary>Products forms.py</summary>
 
-![models.py testing]()
+![Products forms.py testing](/docs/testing-images/python-testing/world_of_games_products-forms.py-testing.png)
 </details>
 
 <details>
-<summary>urls.py</summary>
+<summary>Products models.py</summary>
 
-![urls.py testing]()
+![Products models.py testing](/docs/testing-images/python-testing/world_of_games_products-models.py-testing.png)
 </details>
 
 <details>
-<summary>views.py</summary>
+<summary>Products urls.py</summary>
 
-![views.py testing]()
-</details>
-
-- App
-
-<details>
-<summary>admin.py</summary>
-
-![admin.py testing]()
+![Products urls.py testing](/docs/testing-images/python-testing/world_of_games_products-urls.py-testing.png)
 </details>
 
 <details>
-<summary>apps.py</summary>
+<summary>Products views.py</summary>
 
-![apps.py testing]()
+![Products views.py testing](/docs/testing-images/python-testing/world_of_games_products-views.py-testing.png)
 </details>
 
 <details>
-<summary>forms.py</summary>
+<summary>Products widgets.py</summary>
 
-![forms.py testing]()
+![Products widgets.py testing](/docs/testing-images/python-testing/world_of_games_products-widgets.py-testing.png)
+</details>
+
+
+- Profiles App
+
+<details>
+<summary>Profiles forms.py</summary>
+
+![Profiles forms.py testing](/docs/testing-images/python-testing/world_of_games_profiles-forms.py-testing.png)
 </details>
 
 <details>
-<summary>models.py</summary>
+<summary>Profiles models.py</summary>
 
-![models.py testing]()
+![Profiles models.py testing](/docs/testing-images/python-testing/world_of_games_profiles-models.py-testing.png)
 </details>
 
 <details>
-<summary>Gamecrit Post urls.py</summary>
+<summary>Profiles urls.py</summary>
 
-![urls.py testing]()
+![Profiles urls.py testing](/docs/testing-images/python-testing/world_of_games_profiles-urls.py-testing.png)
 </details>
 
 <details>
-<summary>views.py</summary>
+<summary>Profiles views.py</summary>
 
-![views.py testing]()
+![Profiles views.py testing](/docs/testing-images/python-testing/world_of_games_profiles-views.py-testing.png)
+</details>
+
+
+- Shoppingbag App
+
+<details>
+<summary>Shoppingbag contexts.py</summary>
+
+![Shoppingbag contexts.py testing](/docs/testing-images/python-testing/world_of_games_shoppingbag-contexts.py-testing.png)
+</details>
+
+<details>
+<summary>Shoppingbag urls.py</summary>
+
+![Shoppingbag urls.py testing](/docs/testing-images/python-testing/world_of_games_shoppingbag-urls.py-testing.png)
+</details>
+
+<details>
+<summary>Shoppingbag views.py</summary>
+
+![Shoppingbag views.py testing](/docs/testing-images/python-testing/world_of_games_shoppingbag-views.py-testing.png)
+</details>
+
+
+- About us App
+
+<details>
+<summary>About us admin.py</summary>
+
+![About us admin.py testing](/docs/testing-images/python-testing/world_of_games_about_us-admin.py-testing.png)
+</details>
+
+<details>
+<summary>About us forms.py</summary>
+
+![About us forms.py testing](/docs/testing-images/python-testing/world_of_games_about_us-forms.py-testing.png)
+</details>
+
+<details>
+<summary>About us models.py</summary>
+
+![About us models.py testing](/docs/testing-images/python-testing/world_of_games_about_us-models.py-testing.png)
+</details>
+
+<details>
+<summary>About us urls.py</summary>
+
+![About us urls.py testing](/docs/testing-images/python-testing/world_of_games_about_us-urls.py-testing.png)
+</details>
+
+<details>
+<summary>About us views.py</summary>
+
+![About us views.py testing](/docs/testing-images/python-testing/world_of_games_about_us-views.py-testing.png)
+</details>
+
+
+- Checkout App
+
+<details>
+<summary>Checkout admin.py</summary>
+
+![Checkout admin.py testing](/docs/testing-images/python-testing/world_of_games_checkout-admin.py-testing.png)
+</details>
+
+<details>
+<summary>Checkout forms.py</summary>
+
+![Checkout forms.py testing](/docs/testing-images/python-testing/world_of_games_checkout-forms.py-testing.png)
+</details>
+
+<details>
+<summary>Checkout models.py</summary>
+
+![Checkout models.py testing](/docs/testing-images/python-testing/world_of_games_checkout-models.py-testing.png)
+</details>
+
+<summary>Checkout signals.py</summary>
+
+![Checkout signals.py testing](/docs/testing-images/python-testing/world_of_games_checkout-signals.py-testing.png)
+</details>
+
+<details>
+<summary>Checkout urls.py</summary>
+
+![Checkout urls.py testing](/docs/testing-images/python-testing/world_of_games_checkout-urls.py-testing.png)
+</details>
+
+<details>
+<summary>Checkout views.py</summary>
+
+![Checkout views.py testing](/docs/testing-images/python-testing/world_of_games_checkout-views.py-testing.png)
+</details>
+
+<details>
+<summary>Checkout webhook_handler.py</summary>
+
+![Checkout webhook_handler.py testing](/docs/testing-images/python-testing/world_of_games_checkout-webhook_handler.py-testing.png)
+</details>
+
+<summary>Checkout webhooks.py</summary>
+
+![Checkout webhooks.py testing](/docs/testing-images/python-testing/world_of_games_checkout-webhooks.py-testing.png)
+</details>
+
+
+- FAQ App
+
+<details>
+<summary>FAQ admin.py</summary>
+
+![FAQ admin.py testing](/docs/testing-images/python-testing/world_of_games_faq-admin.py-testing.png)
+</details>
+
+<details>
+<summary>FAQ forms.py</summary>
+
+![FAQ forms.py testing](/docs/testing-images/python-testing/world_of_games_faq-forms.py-testing.png)
+</details>
+
+<details>
+<summary>FAQ models.py</summary>
+
+![FAQ models.py testing](/docs/testing-images/python-testing/world_of_games_faq-models.py-testing.png)
+</details>
+
+<details>
+<summary>FAQ urls.py</summary>
+
+![FAQ urls.py testing](/docs/testing-images/python-testing/world_of_games_faq-urls.py-testing.png)
+</details>
+
+<details>
+<summary>FAQ views.py</summary>
+
+![FAQ views.py testing](/docs/testing-images/python-testing/world_of_games_faq-views.py-testing.png)
+</details>
+
+
+- Newsletter App
+
+<details>
+<summary>Newsletter admin.py</summary>
+
+![Newsletter admin.py testing](/docs/testing-images/python-testing/world_of_games_newsletter-admin.py-testing.png)
+</details>
+
+<details>
+<summary>Newsletter forms.py</summary>
+
+![Newsletter forms.py testing](/docs/testing-images/python-testing/world_of_games_newsletter-forms.py-testing.png)
+</details>
+
+<details>
+<summary>Newsletter models.py</summary>
+
+![Newsletter models.py testing](/docs/testing-images/python-testing/world_of_games_newsletter-models.py-testing.png)
+</details>
+
+<details>
+<summary>Newsletter urls.py</summary>
+
+![Newsletter urls.py testing](/docs/testing-images/python-testing/world_of_games_newsletter-urls.py-testing.png)
+</details>
+
+<details>
+<summary>Newsletter views.py</summary>
+
+![Newsletter views.py testing](/docs/testing-images/python-testing/world_of_games_newsletter-views.py-testing.png)
 </details>
 
 ### Accessibility
