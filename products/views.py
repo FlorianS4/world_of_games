@@ -26,7 +26,7 @@ def all_products(request):
             sort = sortkey
             if sortkey == 'name':
                 sortkey = 'lower_name'
-                products = products.annotate(lower_name=Lower('name'))
+                products = products.annotate(lower_name=Lower('product_name'))
 
             if sortkey == 'category':
                 sortkey = 'category__name'
@@ -118,7 +118,8 @@ def review_edit(request, product_id, review_id):
             review.save()
             messages.add_message(request, messages.SUCCESS, 'Review Updated!')
         else:
-            messages.add_message(request, messages.ERROR, 'Error updating review!')
+            messages.add_message(request, messages.ERROR,
+                                 'Error updating review!')
 
     return HttpResponseRedirect(reverse('product_detail', args=[product_id]))
 
@@ -134,7 +135,9 @@ def review_delete(request, product_id, review_id):
         review.delete()
         messages.add_message(request, messages.SUCCESS, 'Review deleted!')
     else:
-        messages.add_message(request, messages.ERROR, 'You can only delete your own review!')
+        messages.add_message(request, messages.ERROR,
+                             'You can only delete ' +
+                             'your own review!')
 
     return HttpResponseRedirect(reverse('product_detail', args=[product_id]))
 
@@ -215,4 +218,3 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
-
