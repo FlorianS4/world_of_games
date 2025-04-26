@@ -47,6 +47,10 @@ Visit World of Games [here](add link here)!!
 - [Technologies Used](#technologies-used)
     - [Languages](#languages)
     - [Programs Used - Frameworks - Libraries - Databases](#programs-used---frameworks---libraries---databases)
+- [Web Marketing](#web-marketing)
+    - [SEO Keywords](#seo-keywords)
+    - [Facebook Buisness Page](#facebook-buisness-page)
+    - [Robots.txt and sitemap.xml files](#robots.txt-and-sitemap.xml-files)
 - [Deployment](#deployment)
     - [Heroku Deployment](#heroku-deployment)
     - [Running the project locally](#running-the-project-locally)
@@ -105,66 +109,122 @@ All Images were taken from different websites. I give credit to them in the [cre
 <details>
 
 <summary>Desktop Wireframe</summary>
-Main Page:
+Index Page:
 
-![Wireframe Main Page]()
+![Wireframe Index Page](/docs/wireframes-images/index-page-desktop.png)
 
- Page:
+Products Page:
 
-![]()
+![Wireframe Products Page](/docs/wireframes-images/products-page-desktop.png)
 
- Page:
+Product Detail Page:
 
-![]()
+![Wireframe Product Detail Page](/docs/wireframes-images/product-detail-page-desktop.png)
 
-Page:
+Shoppingbag Page:
 
-![]()
+![Wireframe Shoppingbag Page](/docs/wireframes-images/shoppingbag-page-desktop.png)
 
-Page:
+Checkout Page:
 
-![Login Page](/docs/wireframes-images/login-page-desktop.png)
+![Wireframe Checkout Page](/docs/wireframes-images/checkout-page-desktop.png)
 
-Register Page:
+Profile Page:
 
-![Register Page](/docs/wireframes-images/register-page-desktop.png)
+![Wireframe Profile Page](/docs/wireframes-images/my-profile-page-desktop.png)
 
-404 Page:
+About us Page:
 
-![404 Page]()
+![Wireframe About us Page](/docs/wireframes-images/about_us-page-desktop.png)
+
+FAQ Page:
+
+![Wireframe FAQ Page](/docs/wireframes-images/faq-page-desktop.png)
+
+Newsletter Page:
+
+![Wireframe Newsletter Page](/docs/wireframes-images/newsletter-page-desktop.png)
+
+Add Product Page:
+
+![Wireframe Add Product Page](/docs/wireframes-images/add-product-page-desktop.png)
+
+Edit Product Page:
+
+![Wireframe Edit Product Page](/docs/wireframes-images/edit-product-page-desktop.png)
+
+Sign in Page:
+
+![Wireframe Sign in Page](/docs/wireframes-images/sign-in-page-desktop.png)
+
+Sign up Page:
+
+![Wireframe Register Page](/docs/wireframes-images/sign-up-page-desktop.png)
+
+Sign out Page:
+
+![Wireframe Sign out Page](/docs/wireframes-images/logout-page-desktop.png)
 
 </details>
 
 <details>
 
 <summary>Mobile Wireframe</summary>
-Main Page:
+Index Page:
 
-![Wireframe Main Page mobile]()
+![Wireframe Index Page](/docs/wireframes-images/index-page-mobile.png)
 
-Page:
+Products Page:
 
-![]()
+![Wireframe Products Page](/docs/wireframes-images/products-page-mobile.png)
 
-Page:
+Product Detail Page:
 
-![]()
+![Wireframe Product Detail Page](/docs/wireframes-images/product-detail-page-mobile.png)
 
-Page:
+Shoppingbag Page:
 
-![]()
+![Wireframe Shoppingbag Page](/docs/wireframes-images/shoppingbag-page-mobile.png)
 
-Login Page:
+Checkout Page:
 
-![Login Page mobile](/docs/wireframes-images/login-page-mobile.png)
+![Wireframe Checkout Page](/docs/wireframes-images/checkout-page-mobile.png)
 
-Register Page:
+Profile Page:
 
-![Register Page mobile](/docs/wireframes-images/register-page-mobile.png)
+![Wireframe Profile Page](/docs/wireframes-images/my-profile-page-mobile.png)
 
-404 Page:
+About us Page:
 
-![404 Page mobile](/docs/wireframes-images/404-page-mobile.png)
+![Wireframe About us Page](/docs/wireframes-images/about-us-page-mobile.png)
+
+FAQ Page:
+
+![Wireframe FAQ Page](/docs/wireframes-images/faq-page-mobile.png)
+
+Newsletter Page:
+
+![Wireframe Newsletter Page](/docs/wireframes-images/newsletter-page-mobile.png)
+
+Add Product Page:
+
+![Wireframe Add Product Page](/docs/wireframes-images/add-product-page-mobile.png)
+
+Edit Product Page:
+
+![Wireframe Edit Product Page](/docs/wireframes-images/edit-product-page-mobile.png)
+
+Sign in Page:
+
+![Wireframe Sign in Page](/docs/wireframes-images/sign-in-page-mobile.png)
+
+Sign up Page:
+
+![Wireframe Register Page](/docs/wireframes-images/sign-up-page-mobile.png)
+
+Sign out Page:
+
+![Wireframe Sign out Page](/docs/wireframes-images/logout-page-mobile.png)
 
 </details>
 
@@ -327,6 +387,14 @@ HTML, CSS, JavaScript, Python
 - [Bootstrap 5.3](https://getbootstrap.com/docs/5.3/getting-started/introduction//) - used as a CSS framework.
 - [Cloudinary](https://cloudinary.com/) - online static file storage used for uploaded pictures.
 - [PostgreSQL from Code Institute](https://dbs.ci-dbs.net/) - Postgres database.
+
+## Web Marketing
+### SEO Keywords
+### Facebook Buisness Page
+I created a mockup Facebook page with the Wireframe Code Institute provided. These SNS Pages are a good way to advertise a live site and is important to get the main website a good page ranking.
+![Facebook Mockup Page](/docs/wireframes-images/facebook-wireframe.png)
+
+### Robots.txt and sitemap.xml files
 
 
 

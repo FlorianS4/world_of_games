@@ -363,6 +363,7 @@ No errors were shown for all the python files from the [PEP8 CI Python Linter](h
 ![Checkout models.py testing](/docs/testing-images/python-testing/world_of_games_checkout-models.py-testing.png)
 </details>
 
+<details>
 <summary>Checkout signals.py</summary>
 
 ![Checkout signals.py testing](/docs/testing-images/python-testing/world_of_games_checkout-signals.py-testing.png)
@@ -386,6 +387,7 @@ No errors were shown for all the python files from the [PEP8 CI Python Linter](h
 ![Checkout webhook_handler.py testing](/docs/testing-images/python-testing/world_of_games_checkout-webhook_handler.py-testing.png)
 </details>
 
+<details>
 <summary>Checkout webhooks.py</summary>
 
 ![Checkout webhooks.py testing](/docs/testing-images/python-testing/world_of_games_checkout-webhooks.py-testing.png)
