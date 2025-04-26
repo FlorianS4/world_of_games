@@ -15,6 +15,7 @@ Visit World of Games [here](add link here)!!
 - [Site Owner Goals](#site-owner-goals)
 - [User Experience](#user-experience)
     - [User Stories](#user-stories)
+        - [Developer/Site Owner/Superuser](#developersite-ownersuperuser-stories)
         - [First Time User](#first-time-user)
         - [Returning User](#returning-user)
         - [Frequent User](#frequent-user)
@@ -69,18 +70,52 @@ Visit World of Games [here](add link here)!!
 
 
 ## Site Owner Goals
-- 
+- to create a fully working e-commerce page
+- to provide the user with a website where they can buy games
+- to provide the user with the ability to sort and search games
+- to provide the user with the ability to leave a review
+- to provide the user with the ability to create a profile for an easier ordering process
+- to provide the user with the ability to read through FAQs
+- to provide the user with the ability to subscribe to a newsletter
+- to provide the user with the ability to get in contact with owners 
+
 
 ## User Experience
 ### User Stories
+
+#### Developer/Site Owner/Superuser Stories
+- As a developer I can link VS code with my GitHub repository and install dependencies so that I can work on my project.
+- As a Developer I can set up necessary base items so that I can run the server to check the page in preview. 
+- As a superuser I can have the ability to update/add/delete products on the website, add extra security on CRUD pages so that only I can work on the products inventory and work on pages outside of the admin panel.
+- As an admin/user I can have access to the admin panel so that I can control all the content and the user base.
+- As a site owner I want the website to be public so that real users can use it.
+- As a site owner I can document my project so that other developers and I can understand and further work on the project. 
+- As a site owner I can document all different types of tests so that the passing criteria of the website are in one file.
+
 #### First Time User
-- 
+- As a site user I can find the site content's links instinctively so that I can easily navigate through to find contents.
+- As a site user I can search for a product by name so that I can find a specific product.
+- As a site user I can view a list of products and select products from this list so that I can see an overview of things I might buy and select them.
+- As a site user I can see categories and special offers so that I can see special offers, save money or look through the categories.
+- As a site user I can see product in great detail and put item in shoppingbag so that am informed about the product and can buy it.
+- As a site user I can check my order before finally submitting payment so that I can see if everything is there that I want.
+- As a site user I can checkout with my order so that I can finish my order and receive the products I want.
+- As a site user I can add products to the shopping bag in various sizes or game types so that I can buy the amount and game types I want.
+- As a site user I want to see common questions on a FAQ page so that I can get a better knowledge of common things.
+- As a site user I can get an email after placing an order so that I see all the information about it.
+
+
 
 #### Returning User
-- 
+- As a site user I want to read about the store and get in contact with the store owner so that I ask things that might not have been answered in FAQs
+- As a site user I can see my previous orders and delivery information so that I can use them for future orders and update delivery information.
+- As a site user I can sort the products to my desire so that I can find the best-rated or best-priced products
+- As a site user I can add my own review below a product so that I can give my opinion.
 
 #### Frequent User
-- 
+- As a site user I can see my previous orders and delivery information so that I can use them for future orders and update delivery information.
+- As a user I can subscribe to a newsletter so that I am being updated about new products.
+
 
 ## Design
 ### Typography
