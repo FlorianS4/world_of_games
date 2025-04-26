@@ -1,7 +1,7 @@
 # World of Games Site - Testing
-![World of Games image]()
+![World of Games image](/docs/world-of-games.png)
 
-Visit the deployed site: [World of Games]()
+Visit the deployed site: [World of Games](https://world-of-games-edc70ca11f8f.herokuapp.com/)
 
 
 ## Content
@@ -12,7 +12,6 @@ Visit the deployed site: [World of Games]()
         - [PEP8](#pep8)
 - [Accessibility](#accessibility)
         - [Lighthouse Testing](#lighthouse-testing)
-        - [Wave Testing](#wave-testing)
 - [Links Testing](#links-testing)
 - [Browser Testing](#browser-testing)
 - [Device Testing](#device-testing)
@@ -659,47 +658,6 @@ Mobile
 ![404 Page Mobile](/docs/testing-images/lighthouse-testing/404-page-lighthouse-mobile.png)
 </details>
 
-
-#### Wave Testing
-
-I could not test pages as a sign-in user or pages only a sign-in user can see. 
-
-<details>
-<summary>Home Page</summary>
-
-![Home Page Wave Testing]()
-</details>
-
-<details>
-<summary>Page</summary>
-
-![ Page Wave Testing]()
-</details>
-
-<details>
-<summary>Page</summary>
-
-![Page Wave Testing]()
-</details>
-
-<details>
-<summary>Register Page</summary>
-
-![Register Page Wave Testing]()
-</details>
-
-<details>
-<summary>Login Page</summary>
-
-![Login Page Wave Testing]()
-</details>
-
-<details>
-<summary>404 Page</summary>
-
-![404 Page Wave Testing]()
-</details>
-
 ### Links Testing
 - All internal links are working correctly and redirecting to the correct sections.
 
@@ -717,41 +675,110 @@ The website was successfully tested on the following browsers:
 
 ### User Testing
 
-First Time User:
+#### Developer/Site Owner/Superuser Stories
 
-- 
+- As a developer I can link VS code with my GitHub repository and install dependencies so that I can work on my project.
 
-        * 
+    	*  The developer linked VS successfully with the Github repository and installed all dependencies.
 
-- 
+- As a Developer I can set up necessary base items so that I can run the server to check the page in preview. 
 
-        *  
+    	*  The developer successfully setted up all base items. 
 
-- 
+- As a superuser I can have the ability to update/add/delete products on the website, add extra security on CRUD pages so that only I can work on the products inventory and work on pages outside of the admin panel.
 
-        * 
+    	*  The superuser has abilities on the page that other users do not have, so he can work on the page’s content without the admin panel.
+
+- As an admin/user I can have access to the admin panel so that I can control all the content and the user base.
+
+    	*  The superuser can also control all content from the admin panel.
+
+- As a site owner I want the website to be public so that real users can use it.
+
+    	*  The website was successfully deployed.
+
+- As a site owner I can document my project so that other developers and I can understand and further work on the project. 
+
+    	*  The developer documented the project through a README file.
+
+- As a site owner I can document all different types of tests so that the passing criteria of the website are in one file.
+
+    	*  The developer documented testing through a TESTING file.
 
 
-Returning User:
 
-- 
+#### First Time User:
 
-        * 
+- As a site user I can find the site content's links instinctively so that I can easily navigate through to find contents.
 
-- 
+    	*  The user can easily navigate through the website.
 
-        * 
+- As a site user I can search for a product by name so that I can find a specific product.
 
-- 
+    	*  The user can search for a product via the search feature.
 
-        * 
+- As a site user I can view a list of products and select products from this list so that I can see an overview of things I might buy and select them.
+
+    	*  The user can view a  product-list and select a product from it.
+
+- As a site user I can see categories and special offers so that I can see special offers, save money or look through the categories.
+
+    	*  The user can select from various categories on how and what should be displayed on the product-list.
+
+- As a site user I can add products to the shopping bag in various sizes or game types so that I can buy the amount and game types I want.
+
+    	*  The user can add products in different quantities and types to the shoppingbag.
+
+- As a site user I can see product in great detail and put item in shoppingbag so that am informed about the product and can buy it.
 
 
-Frequent User:
+    	*  The user can see product details and select them for the shoppingbag.
 
-- 
+- As a site user I can check my order before finally submitting payment so that I can see if everything is there that I want.
 
-        * 
+    	*  The user can check his shoppingbag before placing the order.
+
+- As a site user I can checkout with my order so that I can finish my order and receive the products I want.
+
+    	*  The user can place an order in the checkout page
+
+- As a site user I want to see common questions on a FAQ page so that I can get a better knowledge of common things.
+
+    	*  The user can see commonly asked  questions on the FAQ page.
+
+- As a site user I can get an email after placing an order so that I see all the information about it.
+
+    	*  The user receives a confirmation mail for the order.
+
+
+#### Returning User:
+
+- As a site user I want to read about the store and get in contact with the store owner so that I ask things that might not have been answered in FAQs
+
+    	*  The user can read through the about us page and use the contact form.
+
+- As a site user I can see my previous orders and delivery information so that I can use them for future orders and update delivery information.
+
+    	*  The user can see previous orders and delivery information on the my profile page.
+
+- As a site user I can sort the products to my desire so that I can find the best-rated or best-priced products
+
+    	*  The user can sort through products on the productlist.
+
+- As a site user I can add my own review below a product so that I can give my opinion.
+
+    	*  The user can add, edit and delete their own review on the product detail page.
+
+
+#### Frequent User:
+
+- As a site user I can see my previous orders and delivery information so that I can use them for future orders and update delivery information.
+
+    	*  The user can see his previous orders and update delivery information.
+
+- As a user I can subscribe to a newsletter so that I am being updated about new products.
+
+    	*  The user can subscribe to a newsletter.
 
 
 ### Manual Testing
