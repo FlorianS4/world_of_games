@@ -720,62 +720,60 @@ How to clone:
 ## Credits
 ### Code
 
-This project was based on the Code Institute - .
-The walkthrough provided a base for. I customised a lot of the layouts and styling of this base with Bootsrap and custom CSS.
-
-For help with creating a
-
-- I used []() for help with creating a post.
-- I used []() for help with deleting a post.
-- I used []() for help with editing a post.
-- I used []() for help with storing and displaying likes correctly.
-
-- I used the way []() handled  []() as a reference and built .
+This project was based on the Code Institute - Boutique Ado.
+The walkthrough provided a base for an E-commerce store. I customised a lot of the layouts and styling of this base with Bootsrap and custom CSS.
 
 ### Similar students projects
 
-When I browsed through the peer review slack channel I found [this project]() by []() and I re
+- When I browsed through the peer review slack channel I found [this project](https://github.com/AtsukoCoffey/little_plant) by [AtsukoCoffey](https://github.com/AtsukoCoffey).
+- When I browsed through the peer review slack channel I found [this project](https://github.com/Sarah-Bue/bake-me-happy) by [Sarah-Bue](https://github.com/Sarah-Bue).
+- My mentor gave this project as an inspiration for a project 5 README [this project](https://github.com/pauline-rugwevera/ecommerce-pp5) by [pauline-rugwevera](https://github.com/pauline-rugwevera).
 
 ### Resources Used
-- Code Institute's lessons (I think therefore I Blog)
+- Code Institute's lessons (Boutique Ado)
+- Code Institute Slack Community.
 - [Stack Overflow](https://stackoverflow.com/)
 - [W3Schools](https://www.w3schools.com/)
 ### Media
 - [Link to Image](https://www.pexels.com/photo/mosaic-alien-on-wall-1670977/) - I used this image as my background image, created by [Francesco Ungaro](https://www.pexels.com/@francesco-ungaro/) .
-- [Favicon](https://favicon.io/emoji-favicons/video-game)
+- [Favicon](https://favicon.io/emoji-favicons/video-game).
+- Images and Game Description comes directly from [Steam](https://store.steampowered.com/).
 
 ## Fixed Bugs
-- 
+- If clauses in product view did not run correctly.
 
-    * 
+	* It was because they focused on the wrong clause. I wrote one if clause in another, but because the first one was wrong/condition not met, the clause with a condition that would have been met, was ignored. I took out the first if-clause and it worked.
 
-- 
+- Jquery did not run.
 
-    * 
+	* It was because I used the wrong value for the ``integrity`` attribute.  After cross checking with the source material I replaced the value and it ran.
 
-- 
+- Order total did not update in the admin, but was correctly calculated in stripe.
 
-    * 
+	* First, I adjusted the template with the correct model variables. Then I  adjusted the model with unique variable name and I adjusted ``physical_or_digital_type``’s value to save it correctly to the database. I migrated all the model updates. Then, I updated the variable name to the new variable name, everywhere it was written with new name ``physical_or_digital_type`` While doing this I noticed, that in my views I misspelled bag for shopping bag and corrected that as well. **Conclusion:** Order is saved to the database and is shown after the checkout as well in the admin panel.
 
-- 
+- When submitting whitespace for forms it was accepted or I got an error on certain forms, as well as being able to double submit forms.
 
-    * 
+	* I added either the correct ``HttpResponse`` or ``reverse`` to redirect user after either a  successful or invalid attempt so the user cannot submit invalid data or double submit.
 
-- 
+- Website threw an error due to wrong url.
 
-    * 
+	*  I had href-attributes in place, even though I did not write the according views yet and templates yet, so I removed the whole anchor element  during that project phase. 
 
-- 
+- Product images were not displayed correctly.
 
-    * 
+	* I referred to the correct variable (``product.image.url``) for my ``src`` attribute
 
--  
+-  When there were items in the shoppingbag, on large screens, it showed a few items of the mobile view as well.
 
-    * 
+	* I tried various CSSand bootstrap related fixes. Even tutor support could not help me. So I randomly enclosed certain div elements with the following div element ``<div class="d-block d-md-none"></div>`` instead of just enclosing it once. I pretty much enclosed all element blocks separately and it worked.
+
+## Known Bug
+- No image file is not accessed when there is no upload without an image. I could not find out why it was not referring to it correctly, yet in a real life case we would never let website admins upload a product without an image.
 
 ## Future Content
-- 
-- 
+- Adding a rating system for the user.
+- More marketing, look at other social media channels.
 
 ## Acknowledgments
 My mentor Jubril Akolade for his guidance, input and support.
@@ -783,3 +781,5 @@ My mentor Jubril Akolade for his guidance, input and support.
 The Slack community on Code Institute for reviewing my project and for support.
 
 Code Institute for informational courses.
+
+Special thanks to my wife, who let me complain about everything wrong my project.
