@@ -396,6 +396,8 @@ I created a mockup Facebook page with the Wireframe Code Institute provided. The
 
 ### Robots.txt and sitemap.xml files
 
+I used [XML-Sitemaps](https://www.xml-sitemaps.com/) to create my sitempa.xml file.
+
 
 
 ## Deployment

@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://world-of-games-edc70ca11f8f.herokuapp.com/sitemap.xml

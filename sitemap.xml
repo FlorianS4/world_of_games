@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://world-of-games-edc70ca11f8f.herokuapp.com/</loc>
+  <lastmod>2025-04-26T05:57:25+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://world-of-games-edc70ca11f8f.herokuapp.com/accounts/signup/</loc>
+  <lastmod>2025-04-26T05:57:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://world-of-games-edc70ca11f8f.herokuapp.com/accounts/login/</loc>
+  <lastmod>2025-04-26T05:57:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://world-of-games-edc70ca11f8f.herokuapp.com/shoppingbag/</loc>
+  <lastmod>2025-04-26T05:57:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://world-of-games-edc70ca11f8f.herokuapp.com/products/?sort=price&amp;direction=asc</loc>
+  <lastmod>2025-04-26T05:57:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://world-of-games-edc70ca11f8f.herokuapp.com/products/?sort=rating&amp;direction=asc</loc>
+  <lastmod>2025-04-26T05:57:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://world-of-games-edc70ca11f8f.herokuapp.com/products/?sort=category&amp;direction=asc</loc>
+  <lastmod>2025-04-26T05:57:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://world-of-games-edc70ca11f8f.herokuapp.com/products/</loc>
+  <lastmod>2025-04-26T05:57:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://world-of-games-edc70ca11f8f.herokuapp.com/products/?category=deals</loc>
+  <lastmod>2025-04-26T05:57:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://world-of-games-edc70ca11f8f.herokuapp.com/products/?category=two_in_one</loc>
+  <lastmod>2025-04-26T05:57:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://world-of-games-edc70ca11f8f.herokuapp.com/products/?category=two_in_one,deals</loc>
+  <lastmod>2025-04-26T05:57:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://world-of-games-edc70ca11f8f.herokuapp.com/newsletter/</loc>
+  <lastmod>2025-04-26T05:57:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://world-of-games-edc70ca11f8f.herokuapp.com/about_us/</loc>
+  <lastmod>2025-04-26T05:57:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://world-of-games-edc70ca11f8f.herokuapp.com/faq/</loc>
+  <lastmod>2025-04-26T05:57:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://world-of-games-edc70ca11f8f.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2025-04-26T05:57:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://world-of-games-edc70ca11f8f.herokuapp.com/products/16/</loc>
+  <lastmod>2025-04-26T05:57:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://world-of-games-edc70ca11f8f.herokuapp.com/products/?category=singleplayer</loc>
+  <lastmod>2025-04-26T05:57:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://world-of-games-edc70ca11f8f.herokuapp.com/products/15/</loc>
+  <lastmod>2025-04-26T05:57:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://world-of-games-edc70ca11f8f.herokuapp.com/products/19/</loc>
+  <lastmod>2025-04-26T05:57:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://world-of-games-edc70ca11f8f.herokuapp.com/products/?category=multiplayer</loc>
+  <lastmod>2025-04-26T05:57:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://world-of-games-edc70ca11f8f.herokuapp.com/products/12/</loc>
+  <lastmod>2025-04-26T05:57:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://world-of-games-edc70ca11f8f.herokuapp.com/products/11/</loc>
+  <lastmod>2025-04-26T05:57:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://world-of-games-edc70ca11f8f.herokuapp.com/products/18/</loc>
+  <lastmod>2025-04-26T05:57:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://world-of-games-edc70ca11f8f.herokuapp.com/products/20/</loc>
+  <lastmod>2025-04-26T05:57:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://world-of-games-edc70ca11f8f.herokuapp.com/products/13/</loc>
+  <lastmod>2025-04-26T05:57:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://world-of-games-edc70ca11f8f.herokuapp.com/products/14/</loc>
+  <lastmod>2025-04-26T05:57:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
