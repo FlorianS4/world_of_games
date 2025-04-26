@@ -756,7 +756,7 @@ Frequent User:
 
 ### Manual Testing
 
-- ### Home Page
+- #### Home Page
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
@@ -770,7 +770,7 @@ Frequent User:
 | Clicking GAME NOW Button | Clicking banner will lead user to products page | clicking Button | Corresponding page opens | Pass |
 | Clicking the social media buttons or on FlorianS4 in the footer | clicking the buttons will lead to the corresponding social media sites or to FlorianS4 GitHub profile | Clicking elements | social media sites and GitHub opens in new tabs | Pass |
 
-- ### Products page
+- #### Products pages
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
@@ -781,7 +781,7 @@ Frequent User:
 | Edit-form fields | wrong data will not submit | filled out the form with wrong data and pressing submit | getting a warning message | Pass |
 | Delete button | Superuser, Clicking button will lead to deleting Product| clicking button | Corresponding product deletes and superuser gets an alert for success  | Pass |
 
-- ### Product-detail page
+- #### Product-detail page
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
@@ -801,14 +801,21 @@ Frequent User:
 | Delete button | User of Review, Clicking button will lead to deleting review| clicking button | Corresponding review deletes and usergets an alert for success | Pass |
 | Account links for logged out user | Clicking elements will lead user to corresponding pages | Clicking elements | Corresponding pages opens | Pass |
 
-- ### Newsletter
+- #### Newsletter
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | A newsletter form to subscribe to | to get newsletter | filled out the form with valid data and pressing submit | newsletter form shows up in admin panel and user gets an alert for success | Pass |
 | Form fields | wrong data will not submit | filled out the form with wrong data and pressing submit | getting a warning message | Pass |
 
-- ### FAQ Page
+- #### About Us Page
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| A contact form to get in contact with the Site Owner | to get in contact | filled out the form with valid data and pressing submit | contact form shows up in admin panel and user gets an alert for success | Pass |
+| Form fields | wrong data will not submit | filled out the form with wrong data and pressing submit | getting a warning message | Pass |
+
+- #### FAQ Page
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
@@ -820,14 +827,14 @@ Frequent User:
 | Edit-form fields | wrong data will not submit | filled out the form with wrong data and pressing submit | getting a warning message | Pass |
 | Delete button | Superuser, Clicking button will lead to deleting FAQ | clicking button | Corresponding FAQ deletes and superuser gets an alert for success  | Pass |
 
-- ### Product Management Page
+- #### Product Management Page
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | Add product form | Superuser can add product | filled out the form with valid data and pressing submit | Product form shows up in admin panel, product element is on page and superuser gets an alert for success | Pass |
 | Form fields | wrong data will not submit | filled out the form with wrong data and pressing submit | getting a warning message | Pass |
 
-- ### My Profile
+- #### My Profile
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
@@ -835,7 +842,7 @@ Frequent User:
 | Form fields | wrong data will not submit | filled out the form with wrong data and pressing submit | getting a warning message | Pass |
 | Clicking on Order Number elements | Clicking elements will lead user to corresponding pages | Clicking elements | Corresponding pages opens | Pass |
 
-- ### Shoppingbag page
+- #### Shoppingbag page
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
@@ -845,7 +852,7 @@ Frequent User:
 | Keep Shopping button | Clicking button will lead user to corresponding page | Clicking buttons | Corresponding page opens | Pass |
 | Secure Checkout button | Clicking button will lead user to corresponding page | Clicking buttons | Corresponding page opens | Pass |
 
-- ### Checkout Page
+- #### Checkout Page
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
@@ -853,35 +860,36 @@ Frequent User:
 | Form fields | wrong data will not submit | filled out the form with wrong data and pressing submit | getting a warning message | Pass |
 | Adjust Shopping Bag button | Clicking button will lead user to corresponding page | Clicking button | Corresponding page opens | Pass |
 
-- ### Checkout success page
+- #### Checkout success page
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | Latest Deals button | Clicking button will lead user to corresponding page | Clicking button | Corresponding page opens | Pass |
 
-- ### Register Page
+- #### Register Page
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | register page for new users | page for new users to register | registering a new user | new user will be logged in and shows up in admin panel  | Pass |
 
-- ### Login Page
+- #### Login Page
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | login page for existing users | existing user can log in | log in performed as existing user | existing user signed in | Pass |
 
-- ### Logout Page
+- #### Logout Page
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | User can log out of their account | user will be logged out | log out performed as existing user | user logged out | Pass |
 
-- ### 404 Page
+- #### 404 Page
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | Return to shop button | Clicking button will lead user to products page | Clicking button | Corresponding page opens | Pass |
+
 
 
 I used Google Dev Tools to test responsivness for all device sizes as well es with my device testing.

@@ -30,17 +30,20 @@ Visit World of Games [here](add link here)!!
       - [Navbar](#navbar)
       - [Footer](#footer)
     - [Main Page](#main-page)
-      - [](#)
-      - [](#)
-      - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
-    - [](#)
+      - [Shop access button](#shop-access-button)
+    - [Product Page](#product-page)
+        - [All Product View](#all-product-view)
+        - [Product Detail View](#product-detail-view)
+        - [Sorting](#sorting)
+        - [Superuser Product Managment](#superuser-product-managment)
+    - [Shopping Bag Page](#shopping-bag-page)
+    - [Checkout Page](#checkout-page)
+    - [Profile Page](#profile-page)
+    - [About us Page](#about-us-page)
+    - [FAQ Page](#faq-page)
+    - [Newsletter Page](#newsletter-page)
     - [Signup Page](#signup-page)
-    - [Login Page](#login-page)
+    - [Sign in Page](#login-page)
     - [Logout Page](#logout-page)
     - [404 Page](#404-page)
 - [Testing](#testing)
@@ -248,116 +251,168 @@ This project was designed with the Agile methodology, using the Project Board an
 
 #### Favicon
 
-![Favicon]()
+![Favicon](/docs/readme-images/favicon-screenshot.png)
 
 #### Navbar
 
-![Navbar desktop login view]()
+![Navbar desktop view](/docs/readme-images/navbar-screenshot.png)
 
-![Navbar desktop logged in view]()
+- The navbar gives the user menu options to be redirected to. Depending if they are already logged in or not the Account dropdown has different options.
 
-- The navbar gives the user menu options depending if they are already logged in or not.
+![Navbar mobile view](/docs/readme-images/navbar-mobile1-screenshot.png)
 
-![Navbar mobile view]()
+- The navbar on mobile view has a drop down menu for all options.
 
-- The navbar on mobile view has a drop down menu.
+![Navbar mobile view dropdown](/docs/readme-images/navbar-mobile2-screenshot.png)
 
 #### Footer
 
-![Footer desktop view]()
+![Footer view](/docs/readme-images/footer-screenshot.png)
 
-![Footer mobile view]()
-
-- The footer has a link to my GitHub as well as links to popular social media sites.
+- The footer has a link to my GitHub as well as links to popular social media sites in a different tab.
 
 ### Main Page
-#### World of Games Banner
+#### World of Games Home Page
  
-![Banner desktop login view]()
-![Banner desktop logged in view]()
+![World of Games desktop view](/docs/readme-images/home-screenshot-desktop.png)
 
-- 
+![World of Games mobile view](/docs/readme-images/home-screenshot-mobile.png)
 
-![Banner mobile view]()
+#### Shop access button
 
-#### 
+![Game now button for quick shop access](/docs/readme-images/game-now-screenshot.png)
 
-![]()
+- A button to be redirected to the products in an eye catching colour.
 
-![]()
+### Product Page
 
+#### All Product View
 
-- 
-- 
+![Product Page View](/docs/readme-images/products-screenshot.png)
 
-#### Pagination
+- The user can see all the games which are beeing sold on the products pages.
 
-![Pagination]()
+#### Product Detail View
 
-### 
+![Product Detail Page View](/docs/readme-images/productdetail-zoomed-screenshot.png)
 
-![]()
+- If the user wants to buy the game he can decide if he wants a physical version with a CD, or a digital version with a code he can play on popular game launchers (steam, Epic, etc.). 
+- The user can choose the quantity of products he wants to buy.
 
-- 
+![Product detail select View](/docs/readme-images/product-details-screenshot.png)
 
-![]()
+#### Sorting
 
-- 
+- The user can always sort the products in whichever product list according to a selected list of sorting abilities.
 
-![]()
+![Product Sorting View](/docs/readme-images/sorting-screenshot.png)
 
-- 
+#### Superuser Product Managment
 
-### 
+- The Superuser/Admin has more function then the normal user in line with CRUD functionality.
+- He can edit and delete products from the products list, but also from the product detail page.
 
-![]()
+![Superuser products view](/docs/readme-images/products-superuser-screenshot.png)
 
-- 
+![Superuser product detail view](/docs/readme-images/product-edit-delete-superuser-screenshot.png)
 
-### Page
+- The Superuser/Admin is the only one who can add products to the store from the account dropdown.
 
-![]()
+![Products Add view](/docs/readme-images/product-management-screenshot.png)
 
-- 
+![Products Edit view](/docs/readme-images/edit-product-management-screenshot.png)
 
-### Page
+#### Review Section
 
-![]()
+- A logged in user can leave a review on the product detaul page.
+- A user can edit and delete his own reviews.
 
-- 
+![Review logged in view](/docs/readme-images/reviews-screenshot.png)
 
-###  Page
+- If user is not logged in he gets a prompt to log in or register.
 
-![Page]()
+![Review logged out view](/docs/readme-images/reviews-signed-out-screenshot.png)
 
-- 
+### Shopping Bag Page
 
-### Page
+- The user can see all the items in his shopping bag.
+- The user can make adjustments of the quantity of producst or remove products from the shopping bag.
 
-![]()
+![Shopping Bag view](/docs/readme-images/shoppingbag-screenshot.png)
 
-- 
+- And if he is happy with the selection he can procedd to checkout.
+
+![Shopping Bag view](/docs/readme-images/shoppingbag-checkout-screenshot.png)
+
+### Checkout Page
+
+- The user has to enter delivery information. 
+- If the user is logged in, he can store his form data.
+
+![Checkout view](/docs/readme-images/checkout-screenshot.png)
+
+- If the checkout was successful the user will see a checkout success with his order information.
+
+![Checkout success view](/docs/readme-images/checkout-success-screenshot.png)
+
+- The user will also get an confirmation email with his order information.
+
+![Confirmation email](/docs/readme-images/order-confirmaton-mail-screenshot.png)
+
+### Profile Page
+
+- A logged in user can administer his stored data.
+- A logged in user can see his old orders.
+
+![Profile Page](/docs/readme-images/my-profile-screenshot.png)
+
+### About us Page
+
+- A page about World of Games with a contact form to get in contact with is displayed.
+- Only users that are not the admin can see the form, as the admin should be in contact with himself.
+
+![About us Page](/docs/readme-images/about-us-screenshot.png)
+
+### FAQ Page
+
+- A short, but informative FAQ section.
+
+![FAQ view](/docs/readme-images/faq-screenshot.png)
+
+- The Superuser/Admin can edit and delete FAQs and add new ones on the same page.
+
+![Superuser FAQ view](/docs/readme-images/faq-superuser-screenshot.png)
+
+### Newsletter Page
+
+- A site where site users subscribe to a newsletter.
+
+![Newsletter Page view](/docs/readme-images/newsletter-screenshot.png)
+
+- The user will receive a confirmation mail.
+
+![Newsletter confirmation mail](/docs/readme-images/newsletter-confirmaton-mail-screenshot.png)
 
 ### Signup Page
 
-![Signup Page]()
+![Signup Page](/docs/readme-images/sign-up-screenshot.png)
 
-- A standard sign up page with validation.
+- A standard sign up page with validation for the user.
 
-### Login Page
+### Sign in Page
 
-![Login Page]()
+![Sign in Page](/docs/readme-images/sign-in-screenshot.png)
 
-- A standard login page.
+- A standard sign in page with validation for the user.
 
 ### Logout Page
 
-![Logout Page]()
+![Logout Page](/docs/readme-images/logout-screenshot.png)
 
-- A standard logout page.
+- A standard logout page for the user.
 
 ### 404 Page
-![404 Page]()
+![404 Page](/docs/readme-images/404-screenshot.png)
 - When an error occurs or a wrong input is given to the url the 404-page will show up with the information on how to be redirected to the landing page.
 
 ## Testing
