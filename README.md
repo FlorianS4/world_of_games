@@ -1,12 +1,15 @@
 # World of Games post site
 
-You want to buy video games and are from Austrtia? Give our site a chance!
+You want to buy video games and are from Austria? Give our site a chance!
 
-![World of Games image]()
+![World of Games image](/docs/world-of-games.png)
 
-Description
+World of Games is a fictional B2C e-commerce shop where a user can buy video games. Digital and physical games can be bought and users can leave reviews beneath each product.
+The user can get signed up, subscribe to a newsletter or get in contact with the site owner if he wants to. 
 
-Visit World of Games [here](add link here)!!
+The website has a user friendly interface and is responsive for different screen sizes.
+
+Visit World of Games [here](https://world-of-games-edc70ca11f8f.herokuapp.com/)!!
 
 
 
@@ -24,7 +27,7 @@ Visit World of Games [here](add link here)!!
     - [Imagery](#imagery)
     - [Color Scheme](#color-scheme)
 - [Wireframes](#wireframes)
-- [Relationship Models](relationship-models)
+- [Relationship Models](#relationship-models)
 - [Agil Methology](#agil-methology)
 - [Features](#features)
     - [Common Features](#common-features)
@@ -54,11 +57,16 @@ Visit World of Games [here](add link here)!!
 - [Web Marketing](#web-marketing)
     - [SEO Keywords](#seo-keywords)
     - [Facebook Buisness Page](#facebook-buisness-page)
-    - [Robots.txt and sitemap.xml files](#robots.txt-and-sitemap.xml-files)
+    - [Robots.txt](#robotstxt)
+    - [sitemap.xml](#sitemapxml)
+    - [Newsletter](#newsletter)
 - [Deployment](#deployment)
+    - [PostgreSQL](#postgresql)
+    - [Github](#github-setup)
     - [Heroku Deployment](#heroku-deployment)
-    - [Running the project locally](#running-the-project-locally)
+    - [Amazon Web Services](#amazon-web-services)
     - [Heroku set up](#heroku-set-up)
+    - [Running the project locally](#running-the-project-locally)
 - [Credits](#credits)
     - [Code](#code)
     - [Similar students projects](#similar-students-projects)
@@ -121,17 +129,7 @@ Visit World of Games [here](add link here)!!
 ### Typography
 
 [Google Fonts](https://fonts.google.com/) was used for the following font:
-- ![]()
-
-    []()
-- 
-
-- ![]()
-
-    []()
-- 
-
-- Sans Serif was chosen as a backup font, in case the main font is not imported into the website, or there is a problem with the browser.
+- ![Lato Font](/docs/readme-images/lato.png) Lato font was picked because I like the look of it, it is simple and easy to read.
 
 ### Imagery
 
@@ -139,9 +137,12 @@ All Images were taken from different websites. I give credit to them in the [cre
 
 ### Color Scheme
 
-* 
+* I have used `#FFFFFF` and `#000000` as the primary color for text used on the site.
+* I have used `#AAB7CA` as the line underneath headings and as for the coloring of category and the star rating.
+* I have used `#EA0000` as the eyecather on the Homepage for the Game Now button.
+* I have used `#FFC107` as the color for my borders and as the color for the hover option.
 
-![]()
+![World of Games site color palette](/docs/readme-images/coolors-palette.png)
 
 ## Wireframes
 <details>
@@ -270,7 +271,27 @@ Sign out Page:
 
 I used [LucidChart](https://www.lucidchart.com/) to create a relationship diagram of my models.
 
-![]()
+<details>
+<summary>Website Navigation Diagram</summary>
+
+![Website Navigation Diagram](/docs/readme-images/website-navigation.png)
+
+</details>
+
+<details>
+<summary>First ERD Diagram</summary>
+
+![ERD draft](/docs/readme-images/erd-draft.png)
+
+</details>
+
+<details>
+<summary>Final ERD Diagram</summary>
+
+![ERD final](/docs/readme-images/erd-final.png)
+
+</details>
+
 
 - This diagram shows the relationships in my models and beetween one another.
 - I used the [Django AllAuth](https://docs.allauth.org/en/latest/) library for user authentification, which created my user model for me.
@@ -279,7 +300,11 @@ I used [LucidChart](https://www.lucidchart.com/) to create a relationship diagra
 
 This project was designed with the Agile methodology, using the Project Board and Issues sections in GitHub.
 
->[]()
+>[Project Board](https://github.com/users/FlorianS4/projects/10)
+
+Because I forgot to update my project board with every sprint I finished taking a look at my commits is a better way of seeing how I implemented agile methology.
+I created each app and functionality one after another. One can see from later commits, that through additional external testing (mentor and test users) and through my creating my TESTING.md commits outside of sprints occured.
+I also created a Sprint to-do list on a notebook, but since it is in German and written on top of one another, I decided to not include an image after I tried if my test users could read something from it.
 
 ## Features
 ### Common Features
@@ -461,36 +486,62 @@ HTML, CSS, JavaScript, Python
 - [Google Fonts](https://fonts.google.com/) - to import  fonts used on website.
 - [FontAwesome](https://fontawesome.com/) - for footer's and navbar's icon.
 - [Google Chrome Dev Tools](https://developers.google.com/web/tools/chrome-devtools)- for troubleshooting, debugging, inspecting page's elements, testing responsiveness and styling elements.
-- [Gitpod](https://gitpod.io/) - IDE to develop the website.
+- [VScode](https://code.visualstudio.com/) - IDE to develop the website.
 - [GitHub](https://GitHub.com/) - for version control and hosting.
 - [Balsamiq](https://balsamiq.com/wireframes/)- to create wireframes.
 - [Coolors](https://coolors.co/) - to create color palette.
-- [Wave](https://wave.webaim.org/) to test accessibility.
 - [Google Chrome's Lighthouse](https://developers.google.com/web/tools/lighthouse) - to test performance and accessibility.
 - [W3C Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/) to validate CSS code.
 - [W3C HTML Markup Validator](https://validator.w3.org/) to validate HTML code.
 - [JShint JavaScript Validator](https://jshint.com/) to validate JS code.
 - [PEP8 CI Python Linter](https://pep8ci.herokuapp.com/) to validate Python code.
-- [TinyPNG](https://tinypng.com/) - to compress images to reduce file size without a reduction in quality.
 - [LucidChart](https://www.lucidchart.com/) - was used to make the ERD Diagram.
-- [Django](https://www.djangoproject.com/) - used for the project's web framework. Is a Python framework.
-- [Bootstrap 5.3](https://getbootstrap.com/docs/5.3/getting-started/introduction//) - used as a CSS framework.
-- [Cloudinary](https://cloudinary.com/) - online static file storage used for uploaded pictures.
-- [PostgreSQL from Code Institute](https://dbs.ci-dbs.net/) - Postgres database.
+- [Django](https://www.djangoproject.com/) - used for the project's web framework. Is a Python framework. Other libraries that build on Django (eg.: Django Allauth) were also used.
+- [Bootstrap 4.6](https://getbootstrap.com/docs/4.6/getting-started/introduction/) - used as a CSS framework.
+- [AWS](https://aws.amazon.com/) - online static file storage used for uploaded pictures.
+- [PostgreSQL from Code Institute](https://dbs.ci-dbs.net/) - used as Postgres database.
+- [Heroku](https://www.heroku.com/) - used to deploy project.
+- [Stripe](https://stripe.com/at) - used to provide secure payment.
 
 ## Web Marketing
+
 ### SEO Keywords
+
+According to [Backlinko](https://backlinko.com/hub/seo/seo-keywords): 
+“SEO keywords (also known as “keywords” or “keyphrases”) are terms added to online content in order to improve search engine rankings for those terms. Most keywords are discovered during the keyword research process and are chosen based on a combination of search volume, competition and commercial intent.”
+
+We used the following meta tags with the keywords in them:
+
+``<meta name="description" content="Online e-commerce shop for video games based in Vienna. Different Sales ongoing. Shipping digital and physical content all over Austria.">``
+
+ ``<meta name="keywords" content="Games, Sale, DLC, Digital, Physical, Action, RPG, Rogue-like, Multiplayer, Two-for-one, Co-op, Game bundles, Publisher Sales, DLC for free">``
+
 ### Facebook Buisness Page
+
 I created a mockup Facebook page with the Wireframe Code Institute provided. These SNS Pages are a good way to advertise a live site and is important to get the main website a good page ranking.
 ![Facebook Mockup Page](/docs/wireframes-images/facebook-wireframe.png)
 
-### Robots.txt and sitemap.xml files
+### Robots.txt
 
-I used [XML-Sitemaps](https://www.xml-sitemaps.com/) to create my sitempa.xml file.
+A robots file tells search engines which URLs they should get access to while telling them which sections to avoid. Yet I did not write anything to avoid in my file. However, this is only a guide. Search engines can access your website differently from it..
+
+
+### sitemap.xml 
+
+A sitemap is intended to lead a search engine. It can be seen as a blueprint to guide search engines in finding one’s website's content. They should create better visibility in search engines which means a higher user base.
+
+I used [XML-Sitemaps](https://www.xml-sitemaps.com/) to create my sitemap.xml file.
+
+### Newsletter
+
+The user can stay up-to-date with the website's content through subscribing to a newsletter. 
+
 
 
 
 ## Deployment
+
+### PostgreSQL
 
 How to setup your PostgreSQL database:
 - got to [CI Database Maker](https://dbs.ci-dbs.net/)
@@ -498,16 +549,13 @@ How to setup your PostgreSQL database:
 - create your PostgreSQL database
 - press on Info and copy the Database URL to your env.py file.
 
-How to setup your Cloudinary database.
-- Go to [Cloudinary](https://cloudinary.com/) and sing up for free.
-- Go to your cloudinary dashboard and copy your API key.
-- Add the cloudinary API key to your env.py file. 
+### Github Setup
 
 This site was deployed to GitHub pages.
 Instructions:
 
 - Login to Github.
-- Go to the GitHub repository: FlorianS4/, navigate to the Settings tab.
+- Go to the GitHub repository: https://github.com/FlorianS4/world_of_games, navigate to the Settings tab.
 - Select the Pages tab on the menu on the left side.
 - Under Source, choose main from the Branch dropdown menu. Save it.
 - The page will refresh itself and the website is now deployed with a text indicating such.
@@ -525,18 +573,125 @@ Instructions:
 - Select "Enable Automatic" and "Deploy branch" with the selection main.
 - Select "view" to see the live website.
 
+### Amazon Web Services
+
+- ### Create an AWS Account
+- Search for s3 and create a Bucket.
+- Provide a unique name for your bucket (`name it after your project`)
+- Select `ACLs enabled`.
+- Deselect `Block all puplic access`.
+- Leave the other options unchanged.
+- Click `create bucket`.
+
+- ### Next enable static website hosting.
+- Click on the bucket name to view the bucket details.
+- Click on `Properties`.
+- Select `static website hosting` and click `edit`.
+- Click `Enable`, Enter `index.html` into the index document input and enter `error.html` into the Error document input.
+- Save changes.
+
+- ### Change CORS configuration.
+- Go to the newly created bucket and click on the `Permissions` tab.
+- Scroll down to the CORS section.
+- Add the following code for the CORS settings.
+```
+[
+  {
+      "AllowedHeaders": [
+          "Authorization"
+      ],
+      "AllowedMethods": [
+          "GET"
+      ],
+      "AllowedOrigins": [
+          "*"
+      ],
+      "ExposeHeaders": []
+  }
+]
+```
+- Save changes.
+
+- ### Add a bucket policy
+- Click `Policy Generator`.
+- For the policy select `S3 Bucket Policy`
+- For the principal enter * .
+- For the Action select `GetObject`.
+- Go back to the bucket policy editor and copy the `ARN`
+- Then go back to the Policy Generator and past the `ARN` into the `ARN input`
+- Click `Add Statement`.
+- Scroll down and click `Generate Policy`.
+- Copy the text in the popup:
+```
+{
+    "Version": "2012-10-17",
+    "Id": "Policy1720032710777",
+    "Statement": [
+        {
+            "Sid": "Statement1",
+            "Effect": "Allow",
+            "Principal": "*"
+            "Action": [
+                "s3:GetObject"
+            ],
+            "Resource": [
+            "YOUR_ARN/*"
+            ]
+        }
+    ]
+}
+```
+- Save changes.
+
+- ### Install reuqired packages.
+- `boto3` and `django-storages`.
+
+- ### Update your Django settings.
+```
+ # Bucket Config
+    AWS_STORAGE_BUCKET_NAME = 'world-of-games'  # AWS bucket name
+    AWS_S3_REGION_NAME = 'eu-north-1'
+    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+
+    # Static and media files
+    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+    STATICFILES_LOCATION = 'static'
+    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+    MEDIAFILES_LOCATION = 'media'
+
+    # Override static and media URLs in production
+    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+```
+- Update your INSTALLED_APPS to include `storages`.
+
+- ### Run the `collect static files command`
+```
+python manage.py collectstatic
+```
+- Your Static and media files should now be in your S3 bucket.
+
+
 ### Heroku set up
 
 - In your GitPod workspace create an env.py file and add it to .gitignore.
-- Add your SECRET_KEY value and the DATABASE_URL to the env.py file.
-- Add your CLOUDINARY_URL to the env.py file if you use cloudinary.
+- Add your SECRET_KEY value and the DATABASE_URL and the to the env.py file.
+- Add your `AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY and add USE_AWS', 'True` to the env.py file.
 - In the settings.py file import the env.py file and add the SECRET_KEY and DATABASE_URL file paths.
-- Add cloudinary to the INSTALLED_APPS and to the static files in the settings.py file.
 - Add TEMPLATES_DIR in settings.py file and change the templates directory to TEMPLATES_DIR.
 - Add these Config Vars in Heroku:
-    - `_URL` (Your Cloudinary API key)
-    - `DATABASE_URL` (Your Postgres SQL API key)
-    - `SECRET_KEY` (Your secret key)
+    - `AWS_ACCESS_KEY_ID` - AWS Access Key ID
+    - `AWS_SECRET_ACCESS_KEY` - AWS Secret Key
+    - `DATABASE_URL` - Postgre SQL Url
+    - `EMAIL_HOST_PASS` - Email Password
+    - `EMAIL_HOST_USER` - Email
+    - `SECRET_KEY` - Secret Key
+    - `STRIPE_PUBLIC_KEY` - Stripe Public Key
+    - `STRIPE_SECRET_KEY` - Stripe Secret Key
+    - `STRIPE_WH_SECRET` - Stripe WH Secret
+    - `USE_AWS` - True
 - Additional Heroku Files:
     - Requirements.txt file
     - Create Procfile via gunicorn
@@ -586,9 +741,8 @@ When I browsed through the peer review slack channel I found [this project]() by
 - [Stack Overflow](https://stackoverflow.com/)
 - [W3Schools](https://www.w3schools.com/)
 ### Media
-- []()
-- []() - This Image .
-- [Favicon]()
+- [Link to Image](https://www.pexels.com/photo/mosaic-alien-on-wall-1670977/) - I used this image as my background image, created by [Francesco Ungaro](https://www.pexels.com/@francesco-ungaro/) .
+- [Favicon](https://favicon.io/emoji-favicons/video-game)
 
 ## Fixed Bugs
 - 
