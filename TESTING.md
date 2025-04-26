@@ -696,47 +696,132 @@ Frequent User:
 
 ### Manual Testing
 
-- Home Page 
+- ### Home Page
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-|  |  |  |  | Pass |
-|  |  |  |  | Pass |
-|  |  |  |  | Pass |
-|  |  |  |  | Pass |
-|  |  |  |  | Pass |
-|  |  |  |  | Pass |
+| Clicking on Navbar elements | Clicking elements will drop-down sub-elements | Clicking elements | Sub-elements drops down | Pass |
+| Clicking on Sub-elements/Navbar elements | Clicking elements will lead user to corresponding pages | Clicking elements | Corresponding pages opens | Pass |
+| My account in the banner | Clicking buttons will drop down elements | Clicking button | Elements drop down | Pass |
+| My account in the banner, if user is or isn't logged in | Clicking button will lead user to corresponding pages | Clicking buttons | Corresponding page opens | Pass |
+| Shoppingbag buttons in the banner (items in it) | Clicking button  drops down info element | Clicking buttons | Info element drops down  | Pass |
+| Shoppingbag buttons in the banner | Clicking button will lead user to corresponding page | Clicking buttons | Corresponding page opens  | Pass |
+| Clicking Banner | Clicking banner will lead user to home page | clicking banner | Corresponding page opens | Pass |
+| Clicking GAME NOW Button | Clicking banner will lead user to products page | clicking Button | Corresponding page opens | Pass |
+| Clicking the social media buttons or on FlorianS4 in the footer | clicking the buttons will lead to the corresponding social media sites or to FlorianS4 GitHub profile | Clicking elements | social media sites and GitHub opens in new tabs | Pass |
 
-- Bookmark Page
+- ### Products page
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| bookmark page for logged in users | bookmarked post will show up on bookmark page | visiting the bookmark page | bookmarked posts are showing up | Pass |
+| Clicking Cards Title or Image | Clicking elements will lead user to selected product | clicking title or image | selected product opens | Pass |
+| Clicking Sorting Options | Clicking elements sort products | clicking sorting option | Corresponding product sorting is displayed | Pass |
+| Edit button | Superuser, Clicking button will lead to edit form | clicking button | Corresponding page opens | Pass |
+| A product edit-form | Superuser can edit product | filled out the form with valid data and pressing submit | Product edited form shows up in admin panel, product element is on page and superuser gets an alert for success | Pass |
+| Edit-form fields | wrong data will not submit | filled out the form with wrong data and pressing submit | getting a warning message | Pass |
+| Delete button | Superuser, Clicking button will lead to deleting Product| clicking button | Corresponding product deletes and superuser gets an alert for success  | Pass |
 
-- Register Page
+- ### Product-detail page
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Clicking Game Type Element | Clicking elements will drop down options to select | clicking digital or physical | Corresponding element is selected | Pass |
+| Clicking Quantity buttons | Clicking elements will adjust quantity | clicking - + or arrows | Corresponding quantity is adjusted | Pass |
+| Keep Shopping button | Clicking button will lead user to corresponding page | Clicking buttons | Corresponding page opens | Pass |
+| Add to Shoppingbag button | Clicking button will add selected product to shoppingbag | clicking button | Product is added to shoppingbag | Pass |
+| Edit button | Superuser, Clicking button will lead to edit form | clicking button | Corresponding page opens | Pass |
+| A product edit-form | Superuser can edit product | filled out the form with valid data and pressing submit | Product edited form shows up in admin panel, product element is on page and superuser gets an alert for success | Pass |
+| Edit-form fields | wrong data will not submit | filled out the form with wrong data and pressing submit | getting a warning message | Pass |
+| Delete button | Superuser, Clicking button will lead to deleting Product| clicking button | Corresponding product deletes and superuser gets an alert for success  | Pass |
+| A review form for logged in user | to add own review | filled out the form with valid data and pressing submit | review form shows up in admin panel, on page and user gets an alert for success | Pass |
+| Form fields | wrong data will not submit | filled out the form with wrong data and pressing submit | getting a warning message | Pass |
+| Review Edit button | User of Review - Clicking button will lead to edit form | clicking button | Corresponding edit review form is filled with data | Pass |
+| A Review edit-form | User of Review, can edit Review | filled out the form with valid data and pressing submit | Review edited form shows up in admin panel and review element is on page | Pass |
+| Edit-form fields | wrong data will not submit | filled out the form with wrong data and pressing submit | getting a warning message | Pass |
+| Delete button | User of Review, Clicking button will lead to deleting review| clicking button | Corresponding review deletes and usergets an alert for success | Pass |
+| Account links for logged out user | Clicking elements will lead user to corresponding pages | Clicking elements | Corresponding pages opens | Pass |
+
+- ### Newsletter
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| A newsletter form to subscribe to | to get newsletter | filled out the form with valid data and pressing submit | newsletter form shows up in admin panel and user gets an alert for success | Pass |
+| Form fields | wrong data will not submit | filled out the form with wrong data and pressing submit | getting a warning message | Pass |
+
+- ### FAQ Page
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| FAQ elements | Clicking element box will drop down elements and if open closes open one | Clicking boxes| Elements drop down and open one closes | Pass |
+| A FAQ form | Superuser can add new FAQs | filled out the form with valid data and pressing submit | FAQ form shows up in admin panel and FAQ element is on page | Pass |
+| Form fields | wrong data will not submit | filled out the form with wrong data and pressing submit | getting a warning message | Pass |
+| Edit button | Superuser, Clicking button will lead to edit form | clicking button | Corresponding page opens | Pass |
+| A FAQ edit-form | Superuser can edit FAQ | filled out the form with valid data and pressing submit | FAQ edited form shows up in admin panel and FAQ element is on page | Pass |
+| Edit-form fields | wrong data will not submit | filled out the form with wrong data and pressing submit | getting a warning message | Pass |
+| Delete button | Superuser, Clicking button will lead to deleting FAQ | clicking button | Corresponding FAQ deletes and superuser gets an alert for success  | Pass |
+
+- ### Product Management Page
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Add product form | Superuser can add product | filled out the form with valid data and pressing submit | Product form shows up in admin panel, product element is on page and superuser gets an alert for success | Pass |
+| Form fields | wrong data will not submit | filled out the form with wrong data and pressing submit | getting a warning message | Pass |
+
+- ### My Profile
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Default Delivery Form | Add or change information | filled out the form with valid data and pressing submit | Product form shows up in admin panel, product element is on page and user gets an alert for success | Pass |
+| Form fields | wrong data will not submit | filled out the form with wrong data and pressing submit | getting a warning message | Pass |
+| Clicking on Order Number elements | Clicking elements will lead user to corresponding pages | Clicking elements | Corresponding pages opens | Pass |
+
+- ### Shoppingbag page
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Clicking Quantity buttons | Clicking elements will adjust quantity | clicking - + or arrows | Corresponding quantity is adjusted | Pass |
+| Clicking Update link | Clicking elements will update shoppingbag according to quantity | clicking Update link | Corresponding information is updated with alert | Pass |
+| Clicking Remove link | Clicking elements will remove product from shoppingbag with alert | clicking Remove link | Corresponding product is removed | Pass |
+| Keep Shopping button | Clicking button will lead user to corresponding page | Clicking buttons | Corresponding page opens | Pass |
+| Secure Checkout button | Clicking button will lead user to corresponding page | Clicking buttons | Corresponding page opens | Pass |
+
+- ### Checkout Page
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Checkout form | User can give information for delivery | filled out the form with valid data and pressing complete order| order form shows up in admin panel user is redirected to checkout success page | Pass |
+| Form fields | wrong data will not submit | filled out the form with wrong data and pressing submit | getting a warning message | Pass |
+| Adjust Shopping Bag button | Clicking button will lead user to corresponding page | Clicking button | Corresponding page opens | Pass |
+
+- ### Checkout success page
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Latest Deals button | Clicking button will lead user to corresponding page | Clicking button | Corresponding page opens | Pass |
+
+- ### Register Page
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | register page for new users | page for new users to register | registering a new user | new user will be logged in and shows up in admin panel  | Pass |
 
-- Login Page
+- ### Login Page
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | login page for existing users | existing user can log in | log in performed as existing user | existing user signed in | Pass |
 
-- Logout Page
+- ### Logout Page
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | User can log out of their account | user will be logged out | log out performed as existing user | user logged out | Pass |
 
-- 404 Page
+- ### 404 Page
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-|  |  |  |  |  |
-|  |  |  |  |  |
+| Return to shop button | Clicking button will lead user to products page | Clicking button | Corresponding page opens | Pass |
 
 
 I used Google Dev Tools to test responsivness for all device sizes as well es with my device testing.
