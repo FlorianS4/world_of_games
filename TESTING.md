@@ -464,69 +464,99 @@ No errors were shown for all the python files from the [PEP8 CI Python Linter](h
 Desktop
 
 <details>
-<summary>Home Page</summary>
+<summary>Index Page</summary>
 
-![Home Page Desktop]()
+![Index Page Desktop](/docs/testing-images/lighthouse-testing/index-page-lighthouse-desktop.png)
 </details>
 
 <details>
-<summary>Page</summary>
+<summary>Product Page</summary>
 
-![Page Desktop]()
+![Product Page Desktop](/docs/testing-images/lighthouse-testing/products-page-lighthouse-desktop.png)
 </details>
 
 <details>
-<summary> Page</summary>
+<summary>Product Details Page</summary>
 
-![Page Desktop]()
+![Product Details Page Desktop](/docs/testing-images/lighthouse-testing/product-detail-page-lighthouse-desktop.png)
 </details>
 
 <details>
-<summary>Page</summary>
+<summary>Shoppingbag Page</summary>
 
-![Page Desktop]()
+![Shoppingbag Page Desktop](/docs/testing-images/lighthouse-testing/shopping-page-lighthouse-desktop.png)
 </details>
 
 <details>
-<summary>Page</summary>
+<summary>Checkout Page</summary>
 
-![Page Desktop]()
+![Checkout Page Desktop](/docs/testing-images/lighthouse-testing/checkout-page-lighthouse-desktop.png)
 </details>
 
 <details>
-<summary>Page</summary>
+<summary>Checkout success Page</summary>
 
-![Page Desktop]()
+![Checkout success Page Desktop](/docs/testing-images/lighthouse-testing/checkout-success-page-lighthouse-desktop.png)
 </details>
 
 <details>
-<summary>Page</summary>
+<summary>Product Add Page</summary>
 
-![Page Desktop]()
+![Product Add Page Desktop](/docs/testing-images/lighthouse-testing/product-add-page-lighthouse-desktop.png)
 </details>
 
 <details>
-<summary>Page</summary>
+<summary>Product Edit Page</summary>
 
-![Page Desktop]()
+![Product Edit Page Desktop](/docs/testing-images/lighthouse-testing/product-edit-page-lighthouse-desktop.png)
 </details>
 
 <details>
-<summary>Login Page</summary>
+<summary>Profile Page</summary>
 
-![Login Page Desktop]()
+![Profile Page Desktop](/docs/testing-images/lighthouse-testing/profile-page-lighthouse-desktop.png)
 </details>
 
 <details>
-<summary>Logout Page</summary>
+<summary>About us Page</summary>
 
-![Logout Page Desktop]()
+![About us Page Desktop](/docs/testing-images/lighthouse-testing/about-us-page-lighthouse-desktop.png)
+</details>
+
+<details>
+<summary>Newsletter Page</summary>
+
+![Newsletter Page Desktop](/docs/testing-images/lighthouse-testing/newsletter-page-lighthouse-desktop.png)
+</details>
+
+<details>
+<summary>FAQ Page</summary>
+
+![FAQ Page Desktop](/docs/testing-images/lighthouse-testing/faq-page-lighthouse-desktop.png)
+</details>
+
+<details>
+<summary>Register Page</summary>
+
+![Register Page Desktop](/docs/testing-images/lighthouse-testing/register-page-lighthouse-desktop.png)
+</details>
+
+<details>
+<summary>Sign in Page</summary>
+
+![Sign in Page Desktop](/docs/testing-images/lighthouse-testing/Sign-in-page-lighthouse-desktop.png)
+</details>
+
+<details>
+<summary>Sign out Page</summary>
+
+![Sign out Page Desktop](/docs/testing-images/lighthouse-testing/Sign-out-page-lighthouse-desktop.png)
 </details>
 
 <details>
 <summary>404 Page</summary>
 
-![404 Page Desktop]()
+![404 Page Desktop](/docs/testing-images/lighthouse-testing/404-page-lighthouse-desktop.png)
 </details>
 
 
@@ -534,69 +564,99 @@ Desktop
 Mobile
 
 <details>
-<summary>Home Page</summary>
+<summary>Index Page</summary>
 
-![Home Page Mobile]()
+![Index Page Mobile](/docs/testing-images/lighthouse-testing/index-page-lighthouse-mobile.png)
 </details>
 
 <details>
-<summary> Page</summary>
+<summary>Product Page</summary>
 
-![Page Mobile]()
+![Product Page Mobile](/docs/testing-images/lighthouse-testing/products-page-lighthouse-mobile.png)
 </details>
 
 <details>
-<summary>  Page</summary>
+<summary>Product Details Page</summary>
 
-![Page Mobile]()
+![Product Details Page Mobile](/docs/testing-images/lighthouse-testing/product-detail-page-lighthouse-mobile.png)
 </details>
 
 <details>
-<summary>Page</summary>
+<summary>Shoppingbag Page</summary>
 
-![Page Mobile]()
+![Shoppingbag Page Mobile](/docs/testing-images/lighthouse-testing/shopping-page-lighthouse-mobile.png)
 </details>
 
 <details>
-<summary>Page</summary>
+<summary>Checkout Page</summary>
 
-![Page Mobile]()
+![Checkout Page Mobile](/docs/testing-images/lighthouse-testing/checkout-page-lighthouse-mobile.png)
 </details>
 
 <details>
-<summary>Page</summary>
+<summary>Checkout success Page</summary>
 
-![Page Mobile]()
+![Checkout success Page Mobile](/docs/testing-images/lighthouse-testing/checkout-success-page-lighthouse-mobile.png)
 </details>
 
 <details>
-<summary>Page</summary>
+<summary>Product Add Page</summary>
 
-![Mobile]()
+![Product Add Page Mobile](/docs/testing-images/lighthouse-testing/product-add-page-lighthouse-mobile.png)
+</details>
+
+<details>
+<summary>Product Edit Page</summary>
+
+![Product Edit Page Mobile](/docs/testing-images/lighthouse-testing/product-edit-page-lighthouse-mobile.png)
+</details>
+
+<details>
+<summary>Profile Page</summary>
+
+![Profile Page Mobile](/docs/testing-images/lighthouse-testing/profile-page-lighthouse-mobile.png)
+</details>
+
+<details>
+<summary>About us Page</summary>
+
+![About us Page Mobile](/docs/testing-images/lighthouse-testing/about-us-page-lighthouse-mobile.png)
+</details>
+
+<details>
+<summary>Newsletter Page</summary>
+
+![Newsletter Page Mobile](/docs/testing-images/lighthouse-testing/newsletter-page-lighthouse-mobile.png)
+</details>
+
+<details>
+<summary>FAQ Page</summary>
+
+![FAQ Page Mobile](/docs/testing-images/lighthouse-testing/faq-page-lighthouse-mobile.png)
 </details>
 
 <details>
 <summary>Register Page</summary>
 
-![Register Page Mobile]()
+![Register Page Mobile](/docs/testing-images/lighthouse-testing/register-page-lighthouse-mobile.png)
 </details>
 
 <details>
 <summary>Login Page</summary>
 
-![Login Page Mobile]()
+![Login Page Mobile](/docs/testing-images/lighthouse-testing/Sign-in-page-lighthouse-mobile.png)
 </details>
 
 <details>
 <summary>Logout Page</summary>
 
-![Logout Page Mobile]()
+![Logout Page Mobile](/docs/testing-images/lighthouse-testing/Sign-out-page-lighthouse-mobile.png)
 </details>
 
 <details>
 <summary>404 Page</summary>
 
-![404 Page Mobile]()
+![404 Page Mobile](/docs/testing-images/lighthouse-testing/404-page-lighthouse-mobile.png)
 </details>
 
 
