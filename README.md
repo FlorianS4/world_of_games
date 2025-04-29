@@ -60,6 +60,7 @@ Visit World of Games [here](https://world-of-games-edc70ca11f8f.herokuapp.com/)!
     - [Robots.txt](#robotstxt)
     - [sitemap.xml](#sitemapxml)
     - [Newsletter](#newsletter)
+    - [Marketing Plan](#marketing-plan)
 - [Deployment](#deployment)
     - [PostgreSQL](#postgresql)
     - [Github](#github-setup)
@@ -536,7 +537,34 @@ I used [XML-Sitemaps](https://www.xml-sitemaps.com/) to create my sitemap.xml fi
 
 The user can stay up-to-date with the website's content through subscribing to a newsletter. 
 
+### Marketing Plan
 
+*For the project's sake this section is written as it would be real with an employed world of game's team*
+
+World of Games is a B2C e-commerce online store. As we are new to the industry our marketing budget is not as big, so we aim for simple social media marketing, search enginge optimization and establishing ourselves at Austrian Based games- and comic conventions. As gamers are on their PC anyways we opted out of the plan of a physical shop and for now solely focus on the online store. Therefore, on sight we have our office and storage room, which is, so far, pretty much the same.
+We know that there are big competitors such as Amazon, Valve and many more, but since we want to establish ourself in Austria, we aim to held gaming days withing our 5 year plan, therefore we also want to create a community not just a money making machine.
+- The functionality is kept as simple as possible, as most gamers want to get the job done as quick as possible, so do we!
+- For our team the CRUD functionality is most important as not every one of us knows how to use the admin panel and you do not need to!
+- Unlike many other areas in the world, facebook is still a thing in Austria ^^ We created our facebook site with this in mind and also intend to join regional gaming groups with this. Yet, this is not the end, Instagram, TikTok and Reddit are right around the corner. We can reuse content and maybe cut some videos of the gameplay of the games we are selling. This is all in our concept board for the next five year
+- Our target market remain gamers in Austria: From age 16-75 with an Austrian median income and already know on how to buy games online.
+
+**5 year plan**
+1. Year:
+   - In the first months mainly market on facebook, with family and friends
+   - From the second quarter, after the office-/storage and our gaming database has been reached start documenting everything for other social media channels
+   - Establish social media channels and look for more investors for eg.: local events
+2. Year:
+   - Hire Gen-Z's for social media marketing
+   - Establish a rating system for the customer
+   - Start going to conventions
+3. Year:
+   - Break Even
+   - Create a Blog or community page
+   - Try to get early access for new games to sell as well, or getting beta codes
+4. Year:
+   - Create an own meet-up that has to do solely with world-of-games and establish a brand name for that as well
+5. Year:
+   - Get out of our current space and get a local store where we can also have our local events
 
 
 ## Deployment
